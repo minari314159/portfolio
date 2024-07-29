@@ -165,6 +165,9 @@ const Form = () => {
 					rows={8}
 					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-primary placeholder:text-textmain placeholder:text-opacity-60 shadow-inner  shadow-primary"
 				/>
+				{error && (
+					<p className="text-md text-red-800">An error has occurred!</p>
+				)}
 				<button
 					type="submit"
 					disabled={loading}
