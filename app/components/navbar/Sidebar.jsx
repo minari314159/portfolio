@@ -3,29 +3,16 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { NavLinks } from "..";
 import { motion } from "framer-motion";
-
-const variants = {
-	open: {
-		clipPath: "circle(1200px at 50px 50px",
-		transition: { type: "spring", stiffness: 20 },
-	},
-	closed: {
-		clipPath: "circle(20px at 50px 50px",
-		transition: { delay: 0.5, type: "spring", stiffness: 400, damping: 40 },
-	},
-};
+import { sidebarVariants } from "@/app/motionVariant";
 
 const Sidebar = () => {
 	const [open, setOpen] = useState(false);
 	return (
 		<motion.div animate={open ? "open" : "closed"}>
 			<motion.div
-				className={`${
-					open
-						? " bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl"
-						: "bg-secondary shadow-xl"
-				}  text-secondary w-[250px] h-screen fixed top-0 left-[1px] z-50`}
-				variants={variants}>
+				className={`  bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl
+					 text-secondary w-[150px] md:w-[250px] h-screen fixed top-0 left-[1px] z-50`}
+				variants={sidebarVariants}>
 				<NavLinks />
 			</motion.div>
 			<button
