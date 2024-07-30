@@ -2,7 +2,7 @@
 import React from "react";
 import { textVariant } from "@/app/motionVariant";
 import { ScrollText } from "..";
-import { SlArrowDown } from "react-icons/sl";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -28,19 +28,16 @@ const Hero = () => {
 					</motion.div>
 					<motion.div className="flex gap-5 text-sm sm:text-md">
 						<Link
-							href="#Projects"
+							href="/porfolio"
 							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 ">
 							Latest Projects
 						</Link>
 						<Link
-							href="#Contact"
+							href="/contact"
 							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75">
 							Contact
 						</Link>
 					</motion.div>
-					<Link href="#Services" className="w-full flex justify-center">
-						<SlArrowDown className="animate-bounce  duration-400" />
-					</Link>
 				</motion.div>
 				<ScrollText />
 				<Image
