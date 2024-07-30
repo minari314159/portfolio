@@ -12,7 +12,7 @@ const Hero = () => {
 		<div className="h-full w-full bg-gradient-to-b from-primary to-[#2f0433] ">
 			<div className="relative w-full h-full ">
 				<motion.div
-					className="max-w-[1366px] md:w-[80%]  px-[20%] flex flex-col items-center md:items-start justify-center gap-5"
+					className="max-w-[1366px] md:w-[80%]  px-[20%] flex flex-col items-center md:items-start justify-center gap-5 relative"
 					variants={textVariant}
 					initial={textVariant.initial}
 					animate={textVariant.animate}>
@@ -26,7 +26,7 @@ const Hero = () => {
 							Full Stack Developer & 3D Artist
 						</motion.h2>
 					</motion.div>
-					<motion.div className="flex gap-5 text-sm sm:text-md">
+					<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[50]">
 						<Link
 							href="/portfolio"
 							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
