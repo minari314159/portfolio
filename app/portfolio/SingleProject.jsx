@@ -21,7 +21,7 @@ const SingleProject = ({ project }) => {
 					width={350}
 					height={350}
 					alt="project image"
-					className="rounded-md object-cover aspect-square w-full col-span-1 shadow-xl"
+					className="rounded-md object-center object-cover aspect-square w-full col-span-1 shadow-xl"
 				/>
 				<div className="absolute bottom-4 right-6 flex gap-5">
 					<Link

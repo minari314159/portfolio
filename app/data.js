@@ -1,5 +1,28 @@
 export const web_projects = [
 	{
+		name: "Nanocellum",
+		description: [
+			"A product design platform that invites you to discover the enchanting world of bio-integrated design through a bio-based lamp.  Nanocellum brings this sustainable innovation to life using React, Parallax design techniques using GSAP, and robust authentication features.",
+		],
+		tags: [
+			{
+				name: "React, Express.js, MongoDB",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "E Commerce, API",
+				color: "red-200",
+			},
+		],
+		image: "/assets/nanocellumpanel.png",
+		gitlink: "https://github.com/minari314159/nanocellum_store",
+		demo: "https://nanocellum-store.vercel.app/",
+	},
+	{
 		name: "3D Portfolio",
 		description: [
 			"Personal 3D version of this portfolio, created with React 3 Fibre in order to integrate and optimize the 3D assets into the WebGL Rendering Engine for web based 3D rendering.",
@@ -18,32 +41,9 @@ export const web_projects = [
 				color: "red-200",
 			},
 		],
-		image: "/3D_Portfolio.png",
+		image: "/assets/3D_Portfolio.png",
 		gitlink: " ",
 		demo: "https://sjo-portfolio.vercel.app/",
-	},
-	{
-		name: "Nanocellum",
-		description: [
-			"A product design platform that invites you to discover the enchanting world of bio-integrated design through a bio-based lamp.  Nanocellum brings this sustainable innovation to life using React, Parallax design techniques, and robust authentication features.",
-		],
-		tags: [
-			{
-				name: "React, Express.js, MongoDB",
-				color: "blue-200",
-			},
-			{
-				name: "Web-Project Created: 2023",
-				color: "green-200",
-			},
-			{
-				name: "E Commerce, API",
-				color: "red-200",
-			},
-		],
-		image: "/nanocellumpanel.png",
-		gitlink: "https://github.com/minari314159/nanocellum_store",
-		demo: "https://nanocellum-store.vercel.app/",
 	},
 
 	{
@@ -66,7 +66,7 @@ export const web_projects = [
 				color: "red-200",
 			},
 		],
-		image: "/gamehub.png",
+		image: "/assets/gamehub.png",
 		gitlink: "https://github.com/minari314159/Gamehub",
 		demo: "https://game-7rijhkuik-minari314159.vercel.app",
 	},
