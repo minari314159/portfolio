@@ -38,7 +38,7 @@ const Services = () => {
 				</h1>
 				<Link
 					href="/portfolio"
-					className="bg-accent p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 w-fit shadow-sm shadow-tertiary text-sm md:text-md text-primary hover:text-white">
+					className="bg-accent p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 w-fit  text-sm md:text-md text-primary hover:text-white shadow-md shadow-[#8a732f] hover:shadow-tertiary">
 					Past Projects
 				</Link>
 			</motion.div>

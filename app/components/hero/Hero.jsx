@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Hero = () => {
 	return (
-		<div className="h-[calc(100vh-100px)] w-full bg-gradient-to-b from-primary to-[#2f0433] ">
+		<div className="h-full w-full bg-gradient-to-b from-primary to-[#2f0433] ">
 			<div className="relative w-full h-full ">
 				<motion.div
 					className="max-w-[1366px] md:w-[80%]  px-[20%] flex flex-col items-center md:items-start justify-center gap-5"
@@ -29,12 +29,12 @@ const Hero = () => {
 					<motion.div className="flex gap-5 text-sm sm:text-md">
 						<Link
 							href="/portfolio"
-							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 ">
+							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
 							Latest Projects
 						</Link>
 						<Link
 							href="/contact"
-							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75">
+							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
 							Contact
 						</Link>
 					</motion.div>
@@ -45,7 +45,7 @@ const Hero = () => {
 					width={600}
 					height={600}
 					alt="Profile illustration"
-					className="absolute bottom-10 sm:right-10 lg:top-10 md:right-0 z-0"
+					className="absolute bottom-[-2rem] sm:right-10 lg:top-10 md:right-0 z-0"
 				/>
 			</div>
 		</div>
