@@ -5,5 +5,15 @@ import NavLinks from "./navbar/NavLinks";
 import Transition from "./transition/Transition";
 import Hero from "./hero/Hero";
 import ScrollText from "./hero/ScrollText";
+import TransitionProvider from "./transition/transitionProvider";
 
-export { Nav, Sidebar, Socials, NavLinks, Transition, Hero, ScrollText };
+export {
+	Nav,
+	Sidebar,
+	Socials,
+	NavLinks,
+	Transition,
+	TransitionProvider,
+	Hero,
+	ScrollText,
+};

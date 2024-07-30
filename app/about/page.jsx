@@ -9,9 +9,7 @@ const Services = () => {
 	return (
 		<motion.section
 			className="w-full  bg-primary h-full  flex flex-col items-center justify-center gap-3 my-10 md:my-2"
-			variants={serviceVariants}
-			initial={serviceVariants.initial}
-			whileInView={serviceVariants.animate}>
+			variants={serviceVariants}>
 			<motion.div
 				className="mb-5 self-end flex items-center justify-end w-full"
 				variants={serviceVariants}
@@ -39,8 +37,8 @@ const Services = () => {
 					<i>Design</i>
 				</h1>
 				<Link
-					href="#Projects"
-					className="bg-tertiary p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 w-fit shadow-sm shadow-tertiary text-sm md:text-md">
+					href="/portfolio"
+					className="bg-accent p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 w-fit shadow-sm shadow-tertiary text-sm md:text-md text-primary hover:text-white">
 					Past Projects
 				</Link>
 			</motion.div>

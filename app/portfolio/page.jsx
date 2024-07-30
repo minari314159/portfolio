@@ -15,8 +15,8 @@ const Projects = () => {
 		damping: 30,
 	});
 	return (
-		<div
-			className=" px-5 relative flex flex-col items-center max-w-[1366px]"
+		<section
+			className=" px-5 flex flex-col items-center max-w-[1366px] min-h-screen bg-primary "
 			ref={ref}>
 			<div className="text-center w-full max-w-[1366px] sticky top-8  mb-5 z-40">
 				<h1 className=" text-3xl md:text-4xl font-bold text-accent text-opacity-90">
@@ -24,12 +24,15 @@ const Projects = () => {
 				</h1>
 				<motion.div
 					style={{ scaleX }}
+					transition={{delay:0.5}}
 					className="h-1 bg-textmain backdrop-filter backdrop-blur-md bg-opacity-50  shadow-xl rounded-full"></motion.div>
 			</div>
-			{web_projects.map((project, index) => (
-				<SingleProject project={project} key={index} />
-			))}
-		</div>
+			<div className="h-full">
+				{web_projects.map((project, index) => (
+					<SingleProject project={project} key={index} />
+				))}
+			</div>
+		</section>
 	);
 };
 

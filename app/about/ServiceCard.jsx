@@ -25,7 +25,7 @@ const ServiceCard = () => {
 					<h2 className="text-lg md:text-xl font-bold">{service.title}</h2>
 					<p className="text-xs md:text-sm">{service.description}</p>
 					<button className="bg-primary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 w-full drop-shadow-lg text-xs md:text-sm">
-						Go
+						More Details
 					</button>
 				</motion.div>
 			))}

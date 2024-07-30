@@ -42,8 +42,10 @@ export const textVariant = {
 		x: 0,
 		opacity: 1,
 		transition: {
+			delay: 1,
 			duration: 1,
 			staggerChildren: 0.1,
+			staggerDirection: -1,
 		},
 	},
 };
@@ -72,6 +74,7 @@ export const serviceVariants = {
 		x: 0,
 		opacity: 1,
 		transition: {
+			delay: 1,
 			duration: 1,
 			staggerChildren: 0.5,
 		},
@@ -79,11 +82,12 @@ export const serviceVariants = {
 };
 
 export const contactVariants = {
-	initial: { y: 500, opacity: 0 },
+	initial: { y: -500, opacity: 0 },
 	animate: {
 		y: 0,
 		opacity: 1,
 		transition: {
+			delay: 1,
 			duration: 0.5,
 			staggerChildren: 0.1,
 		},

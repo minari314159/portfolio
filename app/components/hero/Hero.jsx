@@ -28,7 +28,7 @@ const Hero = () => {
 					</motion.div>
 					<motion.div className="flex gap-5 text-sm sm:text-md">
 						<Link
-							href="/porfolio"
+							href="/portfolio"
 							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 ">
 							Latest Projects
 						</Link>
@@ -45,7 +45,7 @@ const Hero = () => {
 					width={600}
 					height={600}
 					alt="Profile illustration"
-					className="absolute bottom-10 sm:right-10 lg:top-10 md:right-0 "
+					className="absolute bottom-10 sm:right-10 lg:top-10 md:right-0 z-0"
 				/>
 			</div>
 		</div>

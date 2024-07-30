@@ -13,7 +13,7 @@ const SingleProject = ({ project }) => {
 	});
 	const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-[95%] max-w-[1366px] overflow-hidden">
+		<section className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-[95%] max-w-[1366px] min-h-screen">
 			<div className="relative">
 				<Image
 					src={project.image}
