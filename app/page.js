@@ -1,4 +1,11 @@
-import { Nav, Hero, Transition, Services, Projects, Contact } from "./components";
+import {
+	Nav,
+	Hero,
+	Transition,
+	Services,
+	Projects,
+	Contact,
+} from "./components";
 
 export default function Home() {
 	return (
@@ -7,18 +14,15 @@ export default function Home() {
 				<Nav />
 				<Hero />
 			</section>
-
 			<section id="Services">
 				<Transition title={"What we Do."} />
 			</section>
-
 			<Services />
-
 			<section id="Projects">
 				<Transition title={"What We Did."} />
 			</section>
 			<Projects />
-			<Contact/>
+			<Contact />
 		</main>
 	);
 }
