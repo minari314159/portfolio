@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion, useScroll, useSpring } from "framer-motion";
 import SingleProject from "./SingleProject";
 
-
 const Projects = () => {
 	const ref = useRef();
 	const { scrollYProgress } = useScroll({
@@ -18,18 +17,20 @@ const Projects = () => {
 	});
 	return (
 		<section
-			className=" px-5 flex flex-col items-center max-w-[1366px] min-h-screen bg-primary "
+			className=" w-full max-w-[1336px] flex flex-col items-center min-h-screen "
 			ref={ref}>
-			<div className="text-center w-full max-w-[1366px] sticky top-8  mb-5 z-40">
-				<h1 className=" text-3xl md:text-4xl font-bold text-accent text-opacity-90">
-					Featured Works
-				</h1>
+			<div className=" w-[80%] max-w-[1366px] fixed top-8  mb-5 z-40 ">
+				<div className="w-full flex flex-col items-center">
+					<h1 className=" w-fit text-center px-5 py-2 text-3xl md:text-4xl lg:text-5xl font-bold text-accent text-opacity-90 bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl rounded-full">
+						Featured Works
+					</h1>
+				</div>
 				<motion.div
 					style={{ scaleX }}
 					transition={{ delay: 0.5 }}
 					className="h-1 bg-textmain backdrop-filter backdrop-blur-md bg-opacity-50  shadow-xl rounded-full"></motion.div>
 			</div>
-			<div className="h-full">
+			<div className="h-full w-[90%] lg:w-[80%]">
 				{web_projects.map((project, index) => (
 					<SingleProject project={project} key={index} />
 				))}

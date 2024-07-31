@@ -27,7 +27,14 @@ const NavLinks = () => {
 					variants={navVariants}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}>
-					<Link href={link.link} className={`${pathname === link.link && "underline underline-offset-8 "}`}>{link.title}</Link>
+					<Link
+						href={link.link}
+						className={`${
+							pathname === link.link &&
+							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]"
+						}`}>
+						{link.title}
+					</Link>
 				</motion.div>
 			))}
 		</motion.div>

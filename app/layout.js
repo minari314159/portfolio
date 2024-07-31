@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={lora.className}>
-				<section className="h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-[#2f0433] text-textmain">
+				<section className="min-h-screen w-screen  flex flex-col items-center bg-gradient-to-b from-primary to-[#2f0433] text-textmain">
 					<Nav/>
 					{children}
 				</section>

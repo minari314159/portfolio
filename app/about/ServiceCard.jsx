@@ -23,7 +23,7 @@ const ServiceCard = () => {
 					}`}
 					onMouseEnter={() => setHover(index)}
 					onMouseLeave={() => setHover(-1)}>
-					<h2 className="text-lg md:text-xl font-bold">{service.title}</h2>
+					<h2 className="text-lg md:text-xl font-bold [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">{service.title}</h2>
 					<p className="text-xs md:text-sm">{service.description}</p>
 
 					{hover === index && (

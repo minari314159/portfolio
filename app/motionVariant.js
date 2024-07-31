@@ -24,12 +24,12 @@ export const navVariants = {
 
 export const sidebarVariants = {
 	open: {
-		clipPath: "circle(1200px at 50px 50px",
+		clipPath: "circle(1200px at 10px 10px)",
 		transition: { type: "spring", stiffness: 20 },
 	},
 	closed: {
-		clipPath: "circle(20px at 50px 50px",
-		transition: { delay: 0.5, type: "spring", stiffness: 400, damping: 40 },
+		clipPath: "circle(100px at 10px 10px)",
+		transition: { delay: 0.2, type: "spring", stiffness: 400, damping: 40 },
 	},
 };
 

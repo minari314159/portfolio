@@ -9,7 +9,7 @@ const MailSVG = ({ conRef }) => {
 			initial={{ opacity: 1 }}
 			whileInView={{ opacity: 0 }}
 			transition={{ delay: 3, duration: 1 }}
-			className="  absolute m-auto w-full bg-none">
+			className="  absolute m-auto w-full h-full bg-none">
 			<svg
 				viewBox="-102.4 -102.4 1228.80 1228.80"
 				class="icon"

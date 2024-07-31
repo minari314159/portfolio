@@ -65,7 +65,7 @@ const Form = () => {
 	return (
 		<div
 			ref={ref}
-			className="w-[50%] flex items-center justify-center relative">
+			className="w-[50%] lg:w-[70%] flex items-center justify-center relative">
 			<MailSVG conRef={ref} />
 
 			<motion.form
@@ -74,23 +74,27 @@ const Form = () => {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ delay: 4, duration: 1 }}
-				className="bg-tertiary border border-secondary rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-fit p-5 shadow-sm shadow-tertiary flex flex-col items-center justify-center gap-2 w-full  min-w-[300px] max-w-[400px] text-sm md:text-md">
-				<input
-					type="text"
-					name="name"
-					value={form.name}
-					onChange={handleChange}
-					placeholder="Name"
-					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-primary shadow-inner  shadow-primary placeholder:text-textmain placeholder:text-opacity-60"
-				/>
-				<input
-					type="email"
-					name="email"
-					value={form.email}
-					onChange={handleChange}
-					placeholder="Email"
-					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-primary placeholder:text-opacity-60 placeholder:text-textmain shadow-inner  shadow-primary"
-				/>
+				className="bg-tertiary border border-secondary rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full p-5 shadow-sm shadow-tertiary flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[450px] text-sm md:text-md lg:text-lg ">
+				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-primary shadow-inner  shadow-primary placeholder:text-textmain placeholder:text-opacity-60">
+					Name:
+					<input
+						type="text"
+						name="name"
+						value={form.name}
+						onChange={handleChange}
+						className="grow bg-transparent focus:outline-none ml-2"
+					/>
+				</label>
+				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-primary shadow-inner  shadow-primary  placeholder:text-opacity-60 ">
+					Email:
+					<input
+						type="email"
+						name="email"
+						value={form.email}
+						onChange={handleChange}
+						className="grow bg-transparent focus:outline-none ml-2"
+					/>
+				</label>
 				<textarea
 					type="text"
 					name="message"
