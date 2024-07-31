@@ -74,23 +74,29 @@ export const web_projects = [
 
 export const services = [
 	{
-		title: "3D UI/UX Integration",
-		description:
-			"Lorem ipsum odor amet, consectetuer adipiscing elit. Et quis lacus ridiculus mi libero sociosqu. ",
-	},
-	{
 		title: "Seemless Animations",
 		description:
-			"Lorem ipsum odor amet, consectetuer adipiscing elit. Et quis lacus ridiculus mi libero sociosqu. ",
-	},
-	{
-		title: "Backend Integration",
-		description:
-			"Lorem ipsum odor amet, consectetuer adipiscing elit. Et quis lacus ridiculus mi libero sociosqu. ",
+			"Maintaining unique 2D/3D animations using either Framer Motion or GSAP, across all device screen sizes.",
+		skills: ["CSS", "Framer", "GSAP", "Blender", "Three.js"],
 	},
 	{
 		title: "Frontend Development",
 		description:
-			"Lorem ipsum odor amet, consectetuer adipiscing elit. Et quis lacus ridiculus mi libero sociosqu. ",
+			"Using React or  Next.js, with global state management using Redux and data fetching with fetchAPI or Axios.",
+		skills: [
+			"HTML",
+			"Javascript",
+			"React",
+			"Next.js",
+			"Redux",
+			"Axios",
+			"TailwindCSS",
+		],
+	},
+	{
+		title: "Backend Integration",
+		description:
+			"Building anf integrating backend APIs with either Next.js or Express.js to bridge the frontend and database. ",
+		skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
 	},
 ];

@@ -5,49 +5,39 @@ import { ScrollText } from "..";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const Hero = () => {
 	return (
-		<div className="h-full w-full bg-gradient-to-b from-primary to-[#2f0433] ">
-			<div className="relative w-full h-full ">
-				<motion.div
-					className="max-w-[1366px] md:w-[80%]  px-[20%] flex flex-col items-center md:items-start justify-center gap-5 relative"
-					variants={textVariant}
-					initial={textVariant.initial}
-					animate={textVariant.animate}>
-					<motion.div className="h-full flex flex-col justify-center gap-10">
-						<motion.h1
-							variants={textVariant}
-							className="text-2xl font-bold tracking-wider text-tertiary">
-							SARAH OLSEN
-						</motion.h1>
-						<motion.h2 variants={textVariant} className=" text-4xl md:text-5xl">
-							Full Stack Developer & 3D Artist
-						</motion.h2>
-					</motion.div>
-					<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[50]">
-						<Link
-							href="/portfolio"
-							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
-							Latest Projects
-						</Link>
-						<Link
-							href="/contact"
-							className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
-							Contact
-						</Link>
-					</motion.div>
+		<div className=" w-full md:w-[90%] h-full flex flex-col items-center px-10">
+			<motion.div
+				className=" w-full   flex flex-col items-center md:items-start justify-center md:gap-5 relative"
+				variants={textVariant}
+				initial={textVariant.initial}
+				animate={textVariant.animate}>
+				<motion.div className="h-full flex flex-col justify-center gap-5 md:gap-10">
+					<motion.h1
+						variants={textVariant}
+						className=" text-xl  md:text-3xl font-bold tracking-wider text-tertiary">
+						SARAH OLSEN
+					</motion.h1>
+					<motion.h2 variants={textVariant} className=" text-5xl md:text-6xl">
+						Full Stack Developer & Illustrator
+					</motion.h2>
 				</motion.div>
-				<ScrollText />
-				<Image
-					src="./assets/heroprofile.svg"
-					width={600}
-					height={600}
-					alt="Profile illustration"
-					className="absolute bottom-[-2rem] sm:right-10 lg:top-10 md:right-0 z-0"
-				/>
-			</div>
+				<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[50]">
+					<Link
+						href="/portfolio"
+						className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
+						Latest Projects
+					</Link>
+					<Link
+						href="/contact"
+						className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
+						Contact
+					</Link>
+				</motion.div>
+			</motion.div>
+			<ScrollText />
 		</div>
 	);
 };

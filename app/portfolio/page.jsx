@@ -39,7 +39,7 @@ const Projects = () => {
 				<div className="relative">
 					<motion.svg
 						animate={{ rotate: 360 }}
-						transition={{ duration: 8, ease: "linear", repeat: Infinity }}
+						transition={{ duration: 10, ease: "linear", repeat: Infinity }}
 						viewBox="0 0 300 300"
 						className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]">
 						<defs>

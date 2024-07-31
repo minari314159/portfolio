@@ -11,7 +11,7 @@ const Sidebar = () => {
 		<motion.div animate={open ? "open" : "closed"}>
 			<motion.div
 				className={`  bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl
-					 w-[150px] md:w-[250px] h-screen fixed top-0 left-[1px] z-50 `}
+					 w-[150px] md:w-[250px] h-screen fixed top-[-0.5rem] left-[1px] z-50 `}
 				variants={sidebarVariants}>
 				<NavLinks />
 				<button

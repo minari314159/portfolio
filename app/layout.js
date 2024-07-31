@@ -1,6 +1,6 @@
 import { Lora } from "next/font/google";
 import "./globals.css";
-import { TransitionProvider } from "./components";
+import { Nav } from "./components";
 const lora = Lora({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${lora.className} bg-primary`}>
-				<TransitionProvider>{children}</TransitionProvider>
+			<body className={lora.className}>
+				<section className="h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-[#2f0433] text-textmain">
+					<Nav/>
+					{children}
+				</section>
 			</body>
 		</html>
 	);

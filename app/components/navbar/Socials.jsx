@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Socials = () => {
 	return (
-		<div className="flex gap-6 md:gap-16 px-5 fixed top-10 right-[1px] z-50">
+		<div className="flex gap-6 md:gap-16 px-5 ">
 			<motion.a
 				initial={{ opacity: 0, scale: 0.5 }}
 				animate={{ opacity: 1, scale: 1 }}
