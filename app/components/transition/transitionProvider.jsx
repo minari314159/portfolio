@@ -11,12 +11,12 @@ const TransitionProvider = ({ children }) => {
 			<div
 				key={pathname}
 				className="bg-gradient-to-b from-primary to-[#2f0433] text-textmain min-h-screen h-full max-w-[1366px]">
-				<motion.div
+				{/* <motion.div
 					className="h-screen w-screen fixed bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  z-[100]"
 					animate={{ height: "0vh" }}
 					exit={{ height: "140vh" }}
 					transition={{ duration: 1, ease: "easeOut" }}
-				/>
+				/> */}
 				<motion.div
 					className="fixed m-auto top-0 bottom-0 left-0 right-0 text-textmain text-6xl z-[101] w-fit h-fit"
 					initial={{ opacity: 1 }}

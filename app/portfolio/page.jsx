@@ -4,7 +4,7 @@ import { web_projects } from "@/app/data";
 import Link from "next/link";
 import { motion, useScroll, useSpring } from "framer-motion";
 import SingleProject from "./SingleProject";
-import { Inika } from "next/font/google";
+
 
 const Projects = () => {
 	const ref = useRef();
