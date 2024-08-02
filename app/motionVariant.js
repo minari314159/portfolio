@@ -1,5 +1,3 @@
-import { spring } from "framer-motion";
-
 export const linkVariants = {
 	open: {
 		transition: {
@@ -87,14 +85,14 @@ export const serviceVariants = {
 };
 
 export const contactVariants = {
-	initial: { y: -500, opacity: 0 },
+	initial: { x: -500, opacity: 0 },
 	animate: {
-		y: 0,
+		x: 0,
 		opacity: 1,
 		transition: {
-			delay: 1,
-			duration: 0.5,
-			staggerChildren: 0.3,
+			delay: 0.5,
+			duration: 0.6,
+			staggerChildren: 1,
 		},
 	},
 };

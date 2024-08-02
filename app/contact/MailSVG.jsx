@@ -7,7 +7,7 @@ const MailSVG = ({ conRef }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 1 }}
-			whileInView={{ opacity: 0 }}
+			animate={{ opacity: 0 }}
 			transition={{ delay: 3, duration: 1 }}
 			className="  absolute m-auto w-full h-full bg-none">
 			<svg

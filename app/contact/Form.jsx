@@ -63,10 +63,14 @@ const Form = () => {
 	};
 
 	return (
-		<div
+		<motion.div
 			ref={ref}
+			initial={{ translateX: 500 }}
+			animate={{translateX:0, transition:{delay:0.5, duration:0.5}}}
 			className="w-[50%] lg:w-[70%] flex items-center justify-center relative">
-			<MailSVG conRef={ref} />
+	
+				<MailSVG conRef={ref} />
+			
 
 			<motion.form
 				ref={formRef}
@@ -115,7 +119,7 @@ const Form = () => {
 				</button>
 				{success ? <Success setSuccess={setSuccess} /> : null}
 			</motion.form>
-		</div>
+		</motion.div>
 	);
 };
 

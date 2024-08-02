@@ -6,15 +6,13 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
 	return (
-		<motion.section
+		<section
 			className="w-full max-w-[1336px] flex flex-col  items-center justify-center min-h-screen "
-			variants={contactVariants}
-			initial={contactVariants.initial}
-			whileInView={contactVariants.animate}>
+			>
 			<div className="flex flex-col md:flex-row items-center gap-8 p-2">
 				<motion.div
 					className="flex flex-col justify-start items-center md:items-start gap-5 p-5 max-w-[550px] "
-					variants={contactVariants}>
+					variants={contactVariants} initial={contactVariants.initial} animate={contactVariants.animate}>
 					<motion.h1
 						className=" text-5xl md:text-6xl lg:text-7xl md:leading-[4rem] text-center md:text-left"
 						variants={contactVariants}>
@@ -33,7 +31,7 @@ const Contact = () => {
 				</motion.div>
 				<Form />
 			</div>
-		</motion.section>
+		</section>
 	);
 };
 
