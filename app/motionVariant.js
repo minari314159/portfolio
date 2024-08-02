@@ -1,3 +1,5 @@
+import { spring } from "framer-motion";
+
 export const linkVariants = {
 	open: {
 		transition: {
@@ -42,8 +44,11 @@ export const textVariant = {
 		x: 0,
 		opacity: 1,
 		transition: {
-			delay: 1,
+			delay: 0.5,
 			duration: 1,
+			type: "spring",
+			stiffness: 400,
+			damping: 40,
 			staggerChildren: 0.1,
 			staggerDirection: -1,
 		},
@@ -74,7 +79,7 @@ export const serviceVariants = {
 		x: 0,
 		opacity: 1,
 		transition: {
-			delay: 1,
+			delay: 0.5,
 			duration: 1,
 			staggerChildren: 0.5,
 		},
@@ -89,7 +94,7 @@ export const contactVariants = {
 		transition: {
 			delay: 1,
 			duration: 0.5,
-			staggerChildren: 0.1,
+			staggerChildren: 0.3,
 		},
 	},
 };

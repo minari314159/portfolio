@@ -12,23 +12,28 @@ const ServiceCard = () => {
 		<motion.div
 			className="flex flex-wrap items-start justify-center gap-2 px-5 flex-1 w-full max-w-[1366px] "
 			variants={serviceVariants}>
-			{services.map((service, index) => (
+			{services.map((service, i) => (
 				<motion.div
-					key={index}
-					variants={serviceVariants}
-					initial={serviceVariants.initial}
-					animate={serviceVariants.animate}
-					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-30 h-fit p-5  flex flex-col gap-5 max-w-[200px] border border-primary shadow-inner shadow-primary ${
-						hover === index ? " bg-tertiary" : "bg-textmain "
+					key={i}
+					initial={{ translateX:  -500, opacity: 0 }}
+					animate={{
+						translateX: 0,
+						opacity: 1,
+						transition: { duration: 0.5, delay: i * 0.5 },
+					}}
+					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full min-h-[300px] p-5  flex flex-col gap-5 max-w-[200px] border border-primary shadow-inner shadow-primary ${
+						hover === i ? " bg-shadowPrimary" : "bg-secondary"
 					}`}
-					onMouseEnter={() => setHover(index)}
+					onMouseEnter={() => setHover(i)}
 					onMouseLeave={() => setHover(-1)}>
-					<h2 className="text-lg md:text-xl font-bold [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">{service.title}</h2>
+					<h2 className="text-lg md:text-xl font-bold [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
+						{service.title}
+					</h2>
 					<p className="text-xs md:text-sm">{service.description}</p>
 
-					{hover === index && (
-						<div className="backdrop-filter backdrop-blur-lg bg-opacity-30  p-5 shadow-sm shadow-tertiary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
-							{service.skills.map((s, index) => (
+					{hover === i && (
+						<div className="backdrop-opacity-85 backdrop-blur-xl  p-5 shadow-sm shadow-shadowPrimary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
+							{service.skills.map((s, i) => (
 								<p key={index} className="bg-primary p-2 rounded-md shadow-lg">
 									{s}
 								</p>

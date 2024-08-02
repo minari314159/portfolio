@@ -1,58 +1,75 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { SlRocket, SlSocialGithub } from "react-icons/sl";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleProject = ({ project }) => {
-	const ref = useRef();
-
-	const { scrollYProgress } = useScroll({
-		target: ref,
-	});
-	const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+const SingleProject = ({ project, i }) => {
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-[95%] max-w-[1366px] min-h-screen">
-			<div className="relative">
+		<motion.div
+			className={`grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-full h-full shadow-inner shadow-primary border border-primary rounded-md bg-shadowPrimary p-2 ${
+				i === 0 && "col-span-2"
+			}`}
+			initial={{ translateX: i % 2 === 0 ? 500 : -500, opacity: 0 }}
+			animate={{
+				translateX: 0,
+				opacity: 1,
+				transition: { duration: 0.5, delay: i * 0.1 },
+			}}>
+			<div className="relative flex items-start justify-start">
 				<Image
 					src={project.image}
-					ref={ref}
 					width={350}
 					height={350}
 					alt="project image"
-					className="rounded-md object-center object-cover aspect-square w-full col-span-1 shadow-xl"
+					className="rounded-md object-center object-cover aspect-square w-full h-full shadow-xl"
 				/>
-				<div className="absolute bottom-4 right-6 flex gap-5">
+				<div
+					className={`absolute  flex ${
+						i === 0 ? "gap-5 bottom-4 right-6" : "gap-2 bottom-2 right-3"
+					}`}>
 					<Link
 						href={project.gitlink}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="rounded-full bg-primary p-2 shadow-xl">
-						<SlSocialGithub className="w-5 h-5" />
+						className="rounded-full bg-primary p-2 shadow-xl w-fit h-fit">
+						<SlSocialGithub
+							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem]"}`}
+						/>
 					</Link>
 					<Link
 						href={project.demo}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="rounded-full bg-primary p-2 shadow-xl">
-						<SlRocket className="w-5 h-5" />
+						className="rounded-full bg-primary p-2 shadow-xl w-fit h-fit">
+						<SlRocket
+							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem"}`}
+						/>
 					</Link>
 				</div>
 			</div>
-			<motion.div
-				className=" w-[95%] p-2 col-span-1 max-w-[500px] flex flex-col gap-5 "
-				style={{ y }}>
-				<h2 className="text-3xl font-bold">{project.name}</h2>
-				<p>{project.description}</p>
+			<div className=" w-full h-full p-2 col-span-1 max-w-[500px] flex flex-col justify-start gap-5 ">
+				<h2
+					className={`${
+						i === 0 ? "text-4xl" : " text-xl md:text-2xl "
+					} font-semibold`}>
+					{project.name}
+				</h2>
+				<p className={`${i === 0 ? "flex" : "hidden xl:flex"}`}>
+					{project.description}
+				</p>
 
-				<div className="w-full text-right">
+				<div
+					className={`w-full text-right ${
+						i === 0 ? "text-md" : "text-xs md:text-sm"
+					}`}>
 					<p className="text-blue-300">{project.tags[0].name}</p>
 					<p className="text-green-300">{project.tags[1].name}</p>
 					<p className="text-red-300">{project.tags[2].name}</p>
 				</div>
-			</motion.div>
-		</section>
+			</div>
+		</motion.div>
 	);
 };
 

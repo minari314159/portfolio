@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
 	return (
-		<div className=" w-full sm:w-[80%] md:w-[90%] lg:w-[70%] h-full flex flex-col items-center px-10">
+		<div className=" w-full sm:w-[80%] md:w-[90%] lg:w-[70%] h-full flex flex-col items-center px-10 overflow-hidden">
 			<motion.div
 				className=" w-full   flex flex-col items-center md:items-start justify-center md:gap-5 relative"
 				variants={textVariant}

@@ -1,66 +1,22 @@
-"use client";
-import React, { useRef } from "react";
+import React from "react";
 import { web_projects } from "@/app/data";
-import Link from "next/link";
-import { motion, useScroll, useSpring } from "framer-motion";
+
 import SingleProject from "./SingleProject";
+import HireSVG from "./HireSVG";
 
 const Projects = () => {
-	const ref = useRef();
-	const { scrollYProgress } = useScroll({
-		target: ref,
-		offset: ["end end", "start start"],
-	});
-	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 100,
-		damping: 30,
-	});
 	return (
-		<section
-			className=" w-full max-w-[1336px] flex flex-col items-center min-h-screen "
-			ref={ref}>
-			<div className=" w-[80%] max-w-[1366px] fixed top-8  mb-5 z-40 ">
-				<div className="w-full flex flex-col items-center">
-					<h1 className=" w-fit text-center px-5 py-2 text-3xl md:text-4xl lg:text-5xl font-bold text-accent text-opacity-90 bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl rounded-full">
-						Featured Works
-					</h1>
-				</div>
-				<motion.div
-					style={{ scaleX }}
-					transition={{ delay: 0.5 }}
-					className="h-1 bg-textmain backdrop-filter backdrop-blur-md bg-opacity-50  shadow-xl rounded-full"></motion.div>
-			</div>
-			<div className="h-full w-[90%] lg:w-[80%]">
+		<section className=" w-full max-w-[1336px] flex flex-col items-center min-h-screen overflow-hidden gap-5">
+			<h1 className="  text-center px-5 py-2 text-3xl md:text-5xl lg:text-6xl  text-accent   [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
+				Featured Works
+			</h1>
+
+			<div className="grid grid-cols-2 auto-rows-auto gap-4 justify-center items-center w-[90%]">
 				{web_projects.map((project, index) => (
-					<SingleProject project={project} key={index} />
+					<SingleProject project={project} key={index} i={index} />
 				))}
-			</div>
-			<div className="w-screen h-screen flex flex-col items-center justify-center text-center">
-				<h1 className="text-5xl">Do you have a project?</h1>
-				<div className="relative">
-					<motion.svg
-						animate={{ rotate: 360 }}
-						transition={{ duration: 10, ease: "linear", repeat: Infinity }}
-						viewBox="0 0 300 300"
-						className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]">
-						<defs>
-							<path
-								id="circlePath"
-								d="M 150, 150 m -60, 0 a 60, 60 0 0, 1 120, 0 a 60, 60 0 0, 1 -120, 0"
-							/>
-						</defs>
-						<text fill="#ffffff">
-							<textPath xlinkHref="#circlePath" className="text-2xl">
-								Full Stack Developer UI Designer
-							</textPath>
-						</text>
-					</motion.svg>
-					<Link
-						href="/contact"
-						className="w-16 h-16 md:w-28 md:h-28 top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full absolute flex items-center justify-center z-50">
-						Hire
-					</Link>
-				</div>
+
+				<HireSVG />
 			</div>
 		</section>
 	);

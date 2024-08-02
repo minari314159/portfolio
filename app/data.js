@@ -49,8 +49,7 @@ export const web_projects = [
 	{
 		name: "GameHub",
 		description: [
-			"A comprehensive gameing directory, for not only keeping track of the games you own, but saving games you are intrested in. Games can be filtered not only by platform, rating and date added but also by user previous preferences.",
-			" Key skill implementation involved the use of RAWG API, ReactQuery, React Router and Zustand. ",
+			"A comprehensive gaming directory, for keeping track of the games you own and saving games you are intrested in. Games can be filtered not only by platform, rating and date added but also by user previous preferences.",
 		],
 		tags: [
 			{

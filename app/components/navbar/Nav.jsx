@@ -1,8 +1,11 @@
 import React from "react";
-import {  Socials } from "..";
+import { Socials } from "..";
 import dynamic from "next/dynamic";
 
-const DynamicSidebar = dynamic(()=> import('./Sidebar'), {ssr:false})
+const DynamicSidebar = dynamic(() => import("./Sidebar"), {
+	ssr: false,
+	loading: () => <p>Loading...</p>,
+});
 
 const Nav = () => {
 	return (
