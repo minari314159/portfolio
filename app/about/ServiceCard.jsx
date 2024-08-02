@@ -34,7 +34,7 @@ const ServiceCard = () => {
 					{hover === i && (
 						<div className="backdrop-opacity-85 backdrop-blur-xl  p-5 shadow-sm shadow-shadowPrimary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
 							{service.skills.map((s, i) => (
-								<p key={index} className="bg-primary p-2 rounded-md shadow-lg">
+								<p key={i} className="bg-primary p-2 rounded-md shadow-lg">
 									{s}
 								</p>
 							))}

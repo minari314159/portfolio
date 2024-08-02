@@ -5,10 +5,11 @@ import { navVariants, linkVariants } from "@/app/motionVariant";
 import { motion } from "framer-motion";
 import { Merriweather } from "next/font/google";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const merri = Merriweather({ weight: ["700"], subsets: ["latin"] });
 
-const NavLinks = () => {
+const NavLinks = ({ setOpen}) => {
 	const pathname = usePathname();
 	const links = [
 		{ link: "/", title: "Home" },
@@ -20,6 +21,7 @@ const NavLinks = () => {
 		<motion.div
 			className="absolute flex flex-col items-center justify-center gap-10 w-full h-full"
 			variants={linkVariants}>
+			<Image src={"/logo_light.svg"} width={30} height={30} alt="logo" />
 			{links.map((link, index) => (
 				<motion.div
 					key={index}
@@ -29,6 +31,7 @@ const NavLinks = () => {
 					whileTap={{ scale: 0.95 }}>
 					<Link
 						href={link.link}
+						onClick={() => setOpen(false)}
 						className={`${
 							pathname === link.link &&
 							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]"
