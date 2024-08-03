@@ -26,7 +26,7 @@ const Hero = () => {
 						Full Stack Developer & Illustrator
 					</motion.h2>
 				</motion.div>
-				<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[50]">
+				<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[80]">
 					<Link
 						href="/portfolio"
 						className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">

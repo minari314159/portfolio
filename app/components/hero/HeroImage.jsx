@@ -1,12 +1,12 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const HeroImage = () => {
-  return (
+	return (
 		<motion.div
-			className="absolute bottom-0 md:bottom-[0] md:right-[-2rem] w-[550px] sm:w-[600px] md:w-[650px] lg:right-[5%] xl:w-[700px] xl:right-[10%] z-0 overflow-clip"
+			className="absolute bottom-[-1rem] md:right-[-2rem] w-[550px] sm:w-[600px] md:w-[650px] lg:right-[5%] xl:w-[700px] xl:right-[10%] z-0 overflow-clip"
 			initial={{ translateX: 700 }}
 			animate={{
 				translateX: 0,
@@ -27,6 +27,6 @@ const HeroImage = () => {
 			/>
 		</motion.div>
 	);
-}
+};
 
-export default HeroImage
+export default HeroImage;
