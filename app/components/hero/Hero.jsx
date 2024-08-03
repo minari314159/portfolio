@@ -22,19 +22,19 @@ const Hero = () => {
 					</motion.h1>
 					<motion.h2
 						variants={textVariant}
-						className=" text-5xl sm:text-6xl lg:text-7xl">
-						Full Stack Developer & Illustrator
+						className=" text-6xl sm:text-7xl lg:text-8xl [text-shadow:_4px_3px_0_rgb(255_255_0_/_10%)]">
+						Full Stack Developer
 					</motion.h2>
 				</motion.div>
-				<motion.div className="absolute bottom-[-4rem] flex gap-5 text-sm sm:text-md z-[80]">
+				<motion.div className="flex w-full  justify-start gap-5 my-5 text-md sm:text-lg z-[80]">
 					<Link
 						href="/portfolio"
-						className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)]">
+						className="bg-tertiary p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)]">
 						Latest Projects
 					</Link>
 					<Link
 						href="/contact"
-						className="bg-secondary p-2 rounded-lg cursor-pointer hover:bg-tertiary transition-colors duration-75 drop-shadow-[2px_2px_1px_rgba(114,114,114,0.25)] ">
+						className="bg-tertiary p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] ">
 						Contact
 					</Link>
 				</motion.div>

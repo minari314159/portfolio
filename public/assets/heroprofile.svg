@@ -148,7 +148,7 @@
                 <g transform="matrix(0.992542,0.121902,-0.121902,0.992542,1212.83,137.558)">
                     <g transform="matrix(48.9903,0,0,48.9903,211.249,144.236)">
                     </g>
-                    <text x="163.239px" y="144.236px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:48.99px;fill:white;">UI</text>
+                    <text x="163.239px" y="144.236px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:48.99px;fill:rgb(112,96,118);">UI</text>
                 </g>
             </g>
             <g>
@@ -158,7 +158,7 @@
                 <g transform="matrix(0.999591,-0.0285951,0.0285951,0.999591,1318.26,-98.6396)">
                     <g transform="matrix(56.5196,0,0,56.5196,333.143,370.216)">
                     </g>
-                    <text x="149.963px" y="370.216px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:56.52px;fill:white;">Backend</text>
+                    <text x="149.963px" y="370.216px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:56.52px;fill:rgb(112,96,118);">Backend</text>
                 </g>
             </g>
             <g>
@@ -166,7 +166,7 @@
                     <use xlink:href="#_Image31" x="217.567" y="169.775" width="200px" height="102px"/>
                 </g>
                 <g transform="matrix(0.944202,-0.329366,0.329366,0.944202,965.291,171.352)">
-                    <text x="149.963px" y="370.216px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:56.52px;fill:white;">Frontend</text>
+                    <text x="149.963px" y="370.216px" style="font-family:'BodoniSvtyTwoITCTT-Book', 'Bodoni 72';font-size:56.52px;fill:rgb(112,96,118);">Frontend</text>
                 </g>
             </g>
         </g>
