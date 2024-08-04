@@ -1,7 +1,9 @@
-import { Junge } from "next/font/google";
+import { Lora } from "next/font/google";
+
 import "./globals.css";
 import { Nav } from "./components";
-const lora = Junge({ weight: ["400"], subsets: ["latin"] });
+
+const lora = Lora({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata = {
 	title: "SJO Portfolio",

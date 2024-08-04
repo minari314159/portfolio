@@ -23,7 +23,7 @@ const SingleProject = ({ project, i }) => {
 					width={350}
 					height={350}
 					alt="project image"
-					className="rounded-md object-center object-cover aspect-square w-full h-full shadow-xl"
+					className="rounded-md object-top object-cover aspect-square w-full h-full shadow-xl"
 				/>
 				<div
 					className={`absolute  flex ${
