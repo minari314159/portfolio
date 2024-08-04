@@ -10,7 +10,7 @@ const Hero = () => {
 	return (
 		<div className=" w-full sm:w-[80%] md:w-[90%] lg:w-[70%] h-full flex flex-col items-center px-10 overflow-hidden">
 			<motion.div
-				className=" w-full   flex flex-col items-center md:items-start justify-center md:gap-5 relative"
+				className=" w-full   flex flex-col items-center md:items-start justify-center md:gap-5 relative z-[10]"
 				variants={textVariant}
 				initial={textVariant.initial}
 				animate={textVariant.animate}>
@@ -26,7 +26,7 @@ const Hero = () => {
 						Full Stack Developer
 					</motion.h2>
 				</motion.div>
-				<motion.div className="flex w-full  justify-start gap-5 my-5 text-md sm:text-lg z-[80]">
+				<motion.div className="flex w-full  justify-start gap-5 my-5 text-md sm:text-lg z-[10]">
 					<Link
 						href="/portfolio"
 						className="bg-tertiary p-2 rounded-lg cursor-pointer hover:bg-secondary transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)]">

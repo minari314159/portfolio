@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const HeroImage = () => {
 	return (
 		<motion.div
-			className="absolute bottom-[-1rem] right-[-1rem] w-[550px] sm:w-[600px] md:w-[650px] lg:right-[5%] xl:w-[700px] xl:right-[10%] z-0 overflow-clip"
+			className="absolute bottom-[-1rem] right-[-1rem] w-[450px] sm:w-[600px] md:w-[650px] lg:right-[5%] xl:w-[700px] xl:right-[10%] z-0 overflow-clip"
 			initial={{ translateX: 700 }}
 			animate={{
 				translateX: 0,

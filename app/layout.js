@@ -1,7 +1,7 @@
-import { Lora } from "next/font/google";
+import { Junge } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components";
-const lora = Lora({ subsets: ["latin"] });
+const lora = Junge({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata = {
 	title: "SJO Portfolio",
@@ -12,9 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={lora.className}>
-				<section className="min-h-screen w-screen  flex flex-col items-center bg-gradient-to-b from-primary to-[#2f0433] text-textmain">
-					<Nav/>
+			<body
+				className={`${lora.className} min-h-screen w-screen bg-gradient-to-b from-primary to-[#2f0433]`}>
+				<section className="min-h-screen h-full w-full  flex flex-col items-center bg-gradient-to-b from-primary to-[#2f0433] text-textmain">
+					<Nav />
 					{children}
 				</section>
 			</body>

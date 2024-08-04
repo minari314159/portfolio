@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 const Services = () => {
 	return (
 		<motion.section
-			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between"
+			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between gap-5"
 			variants={serviceVariants}>
 			<motion.div
 				className="flex-1  self-end flex items-center justify-end w-full "
