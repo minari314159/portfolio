@@ -52,7 +52,7 @@ const SingleProject = ({ project, i }) => {
 			<div className=" w-full  p-2 col-span-1 max-w-[500px] flex flex-col justify-start gap-5 ">
 				<h2
 					className={`${
-						i === 0 ? "text-5xl" : " text-xl md:text-3xl "
+						i === 0 ? "text-5xl" : " text-xl md:text-2xl "
 					} font-semibold font-['Tahoma']`}>
 					{project.name}
 				</h2>

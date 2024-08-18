@@ -47,13 +47,13 @@ export const web_projects = [
 	},
 
 	{
-		name: "GameHub",
+		name: "Holobiont",
 		description: [
 			"A comprehensive gaming directory, for keeping track of the games you own and saving games you are intrested in. Games can be filtered not only by platform, rating and date added but also by user previous preferences.",
 		],
 		tags: [
 			{
-				name: "React, Typescript, Redux",
+				name: "Python, Rhino3D, Grasshopper",
 				color: "blue-200",
 			},
 			{
@@ -61,11 +61,58 @@ export const web_projects = [
 				color: "green-200",
 			},
 			{
-				name: "Global State & Reusability",
+				name: "Material Design",
 				color: "red-200",
 			},
 		],
-		image: "/assets/gamehub.png",
+		image: "/assets/holobiont.png",
+		gitlink: "https://github.com/minari314159/Gamehub",
+		demo: "https://game-7rijhkuik-minari314159.vercel.app",
+	},
+
+	{
+		name: "Energy Forcasting",
+		description: [
+			"lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+		],
+		tags: [
+			{
+				name: "Python, SKLearn, Pandas",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "Energy Optimization Model",
+				color: "red-200",
+			},
+		],
+		image: "/assets/energyforcasting.jpeg",
+		gitlink: "https://github.com/minari314159/Gamehub",
+		demo: "https://game-7rijhkuik-minari314159.vercel.app",
+	},
+	{
+		name: "Chemical Equilibrium",
+		description: [
+			"lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+		],
+		tags: [
+			{
+				name: "Python (Jython), Matplotlib",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "Thermoelectric Material Design",
+				color: "red-200",
+			},
+		],
+		image: "/assets/copper_sulfides.png",
 		gitlink: "https://github.com/minari314159/Gamehub",
 		demo: "https://game-7rijhkuik-minari314159.vercel.app",
 	},

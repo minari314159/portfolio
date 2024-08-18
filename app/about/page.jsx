@@ -39,7 +39,7 @@ const Services = () => {
 				</h1>
 				<Link
 					href="/portfolio"
-					className=" hover:scale-[103%] p-2 rounded-sm cursor-pointer  transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] ">
+					className=" hover:scale-[103%] p-2 rounded-sm cursor-pointer border border-textmain transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] ">
 					[ Portfolio ]
 				</Link>
 			</motion.div>
