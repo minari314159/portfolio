@@ -21,7 +21,7 @@ const NavLinks = ({ setOpen}) => {
 		<motion.div
 			className="absolute flex flex-col items-center justify-center gap-10 w-full h-full"
 			variants={linkVariants}>
-			<Image src={"/logo_light.svg"} width={30} height={30} alt="logo" />
+			<Image src={"/logo_dark.svg"} width={40} height={40} alt="logo" />
 			{links.map((link, index) => (
 				<motion.div
 					key={index}
@@ -34,7 +34,7 @@ const NavLinks = ({ setOpen}) => {
 						onClick={() => setOpen(false)}
 						className={`${
 							pathname === link.link &&
-							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]"
+							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_20%)]"
 						}`}>
 						{link.title}
 					</Link>

@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 const Services = () => {
 	return (
 		<motion.section
-			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between gap-5"
+			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between gap-5 px-5"
 			variants={serviceVariants}>
 			<motion.div
 				className="flex-1  self-end flex items-center justify-end w-full "
@@ -21,7 +21,7 @@ const Services = () => {
 						Three.js & SVG Motion
 					</i>
 				</p>
-				<hr className=" w-[20%]  border-accent" />
+				<hr className=" w-[20%]  border-t-textmain ml-2" />
 			</motion.div>
 			<motion.div
 				className="flex-1 flex flex-col items-center justify-center gap-5 w-full"
@@ -38,8 +38,8 @@ const Services = () => {
 				</h1>
 				<Link
 					href="/portfolio"
-					className="bg-accent p-2 rounded-lg cursor-pointer  transition-colors duration-75 w-fit  text-sm md:text-[1.05rem] lg:text-lg text-primary  shadow-md shadow-[#8a732f] hover:scale-105">
-					Past Projects
+					className="bg-tertiary p-2 rounded-lg cursor-pointer  transition-colors duration-75 w-fit  text-sm md:text-[1.05rem] lg:text-lg text-primary  shadow-md  hover:bg-textmain">
+					Portfolio
 				</Link>
 			</motion.div>
 			<ServiceCard />

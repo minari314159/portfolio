@@ -8,8 +8,8 @@ import Link from "next/link";
 const SingleProject = ({ project, i }) => {
 	return (
 		<motion.div
-			className={`grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-full h-full shadow-inner shadow-primary border border-primary rounded-md bg-shadowPrimary p-2 ${
-				i === 0 && "col-span-2"
+			className={`grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-full h-full  border border-textmain rounded-sm  p-2 ${
+				i === 0 && "col-span-2 "
 			}`}
 			initial={{ translateX: i % 2 === 0 ? 500 : -500, opacity: 0 }}
 			animate={{
@@ -23,7 +23,7 @@ const SingleProject = ({ project, i }) => {
 					width={350}
 					height={350}
 					alt="project image"
-					className="rounded-md object-top object-cover aspect-square w-full h-full shadow-xl"
+					className="rounded-sm  object-cover aspect-square w-full h-full "
 				/>
 				<div
 					className={`absolute  flex ${
@@ -33,7 +33,7 @@ const SingleProject = ({ project, i }) => {
 						href={project.gitlink}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="rounded-full bg-primary p-2 shadow-xl w-fit h-fit">
+						className="border border-textmain bg-primary rounded-md p-2  w-fit h-fit">
 						<SlSocialGithub
 							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem]"}`}
 						/>
@@ -42,7 +42,7 @@ const SingleProject = ({ project, i }) => {
 						href={project.demo}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="rounded-full bg-primary p-2 shadow-xl w-fit h-fit">
+						className="border border-textmain bg-primary rounded-md p-2  w-fit h-fit">
 						<SlRocket
 							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem"}`}
 						/>
@@ -52,22 +52,19 @@ const SingleProject = ({ project, i }) => {
 			<div className=" w-full h-full p-2 col-span-1 max-w-[500px] flex flex-col justify-start gap-5 ">
 				<h2
 					className={`${
-						i === 0 ? "text-4xl" : " text-xl md:text-2xl "
-					} font-semibold`}>
+						i === 0 ? "text-5xl" : " text-xl md:text-3xl "
+					} font-semibold font-['Tahoma']`}>
 					{project.name}
 				</h2>
-				<p className={`${i === 0 ? "flex" : "hidden xl:flex"}`}>
-					{project.description}
-				</p>
-
 				<div
-					className={`w-full text-right ${
-						i === 0 ? "text-md" : "text-xs md:text-sm"
-					}`}>
-					<p className="text-blue-300">{project.tags[0].name}</p>
-					<p className="text-green-300">{project.tags[1].name}</p>
-					<p className="text-red-300">{project.tags[2].name}</p>
+					className={`w-full  ${i === 0 ? "text-md" : "text-xs md:text-sm"}`}>
+					<p className="text-blue-800">{project.tags[0].name}</p>
+
+					<p className="text-red-800">{project.tags[2].name}</p>
 				</div>
+				<p className={`${i === 0 ? "flex" : "hidden xl:flex"}`}>
+					<i>{project.description}</i>
+				</p>
 			</div>
 		</motion.div>
 	);

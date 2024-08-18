@@ -8,12 +8,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#210124",
-				shadowPrimary: "#371a39",
-				secondary: "#514A59",
-				tertiary: "#706076",
-				accent: "#E2BE4F",
-				textmain: "#F2EDF5",
+				primary: "#cfcbbc",
+				shadowPrimary: "#373735",
+				secondary: "#c0bdaa",
+				tertiary: "#525266",
+				accent: "#D1E0DE",
+				textmain: "#252427",
+				textSecondary: "#cfcbbc",
 			},
 			backgroundImage: {
 				mountains: "url('/assets/mountains.png')",

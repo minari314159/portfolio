@@ -7,7 +7,7 @@ import HireSVG from "./HireSVG";
 const Projects = () => {
 	return (
 		<section className=" w-full max-w-[1336px] flex flex-col items-center min-h-screen overflow-hidden gap-5">
-			<h1 className="  text-center px-5 py-2 text-3xl md:text-5xl lg:text-6xl  text-accent   [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
+			<h1 className="  text-center px-5 py-2 text-3xl md:text-5xl lg:text-6xl  text-textmain   [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
 				Featured Works
 			</h1>
 

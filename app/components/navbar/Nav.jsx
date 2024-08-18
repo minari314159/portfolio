@@ -8,8 +8,13 @@ const DynamicSidebar = dynamic(() => import("./Sidebar"), {
 
 const Nav = () => {
 	return (
-		<nav className="h-[6.25rem] w-screen max-w-[1336px] px-3 py-8 z-[60] relative flex justify-between ">
+		<nav className="h-[6.25rem] w-screen max-w-[1336px] px-3 py-8 z-[60] relative flex justify-between items-center gap-2">
 			<DynamicSidebar />
+			<hr className="w-full border-t-textmain" />
+			<span className="text-nowrap ">
+				<i>Sarah Olsen</i>
+			</span>
+			<hr className="w-full border-t-textmain" />
 			<Socials />
 		</nav>
 	);

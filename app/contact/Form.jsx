@@ -66,11 +66,9 @@ const Form = () => {
 		<motion.div
 			ref={ref}
 			initial={{ translateX: 500 }}
-			animate={{translateX:0, transition:{delay:0.5, duration:0.5}}}
+			animate={{ translateX: 0, transition: { delay: 0.5, duration: 0.5 } }}
 			className="w-[50%] lg:w-[70%] flex items-center justify-center relative">
-	
-				<MailSVG conRef={ref} />
-			
+			<MailSVG conRef={ref} />
 
 			<motion.form
 				ref={formRef}
@@ -78,8 +76,8 @@ const Form = () => {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ delay: 4, duration: 1 }}
-				className="bg-tertiary border border-secondary rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full p-5 shadow-sm shadow-tertiary flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[450px] text-sm md:text-md lg:text-lg ">
-				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-primary shadow-inner  shadow-primary placeholder:text-textmain placeholder:text-opacity-60">
+				className=" border border-textmain rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full p-5 shadow-sm  flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[450px] text-sm md:text-md lg:text-lg ">
+				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-textmain placeholder:text-opacity-60">
 					Name:
 					<input
 						type="text"
@@ -89,7 +87,7 @@ const Form = () => {
 						className="grow bg-transparent focus:outline-none ml-2"
 					/>
 				</label>
-				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-primary shadow-inner  shadow-primary  placeholder:text-opacity-60 ">
+				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-opacity-60 ">
 					Email:
 					<input
 						type="email"
@@ -106,7 +104,7 @@ const Form = () => {
 					onChange={handleChange}
 					placeholder="Your message..."
 					rows={8}
-					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-primary placeholder:text-textmain placeholder:text-opacity-60 shadow-inner  shadow-primary"
+					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-textmain placeholder:text-textmain placeholder:text-opacity-60 shadow-inner  shadow-primary"
 				/>
 				{error && (
 					<p className="text-md text-red-800">An error has occurred!</p>
@@ -114,7 +112,7 @@ const Form = () => {
 				<button
 					type="submit"
 					disabled={loading}
-					className="bg-secondary p-2 px-4 rounded-md cursor-pointer hover:bg-tertiary transition-colors duration-75 text-center w-[50%] mt-4 disabled:bg-tertiary disabled:text-gray-500 shadow  shadow-primary">
+					className="bg-tertiary text-secondary p-2 px-4 rounded-sm cursor-pointer hover:bg-textmain transition-colors duration-75 text-center w-[50%] mt-4 disabled:bg-tertiary disabled:text-primary shadow  ">
 					{loading ? "Sending..." : "Send Message"}
 				</button>
 				{success ? <Success setSuccess={setSuccess} /> : null}
