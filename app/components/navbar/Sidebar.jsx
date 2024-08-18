@@ -19,7 +19,7 @@ const Sidebar = () => {
 					className="w-[50px] h-[50px] rounded-full fixed top-[25px] left-[35px] bg-transparent cursor-pointer z-[60] hover:scale-105">
 					<svg widht="23" height="23" viewBox="0 0 23 23">
 						<motion.path
-							strokeWidth="3"
+							strokeWidth="1.5"
 							stroke="#252427"
 							
 							variants={{
@@ -28,7 +28,7 @@ const Sidebar = () => {
 							}}
 						/>
 						<motion.path
-							strokeWidth="3"
+							strokeWidth="1.5"
 							stroke="#252427"
 							d="M 2 9.423 L 15 9.423"
 							variants={{
@@ -37,7 +37,7 @@ const Sidebar = () => {
 							}}
 						/>
 						<motion.path
-							strokeWidth="3"
+							strokeWidth="1.5"
 							stroke="#252427"
 							variants={{
 								closed: { d: "M 2 16.346 L 20 16.346" },

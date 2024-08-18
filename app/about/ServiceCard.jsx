@@ -10,7 +10,7 @@ const ServiceCard = () => {
 
 	return (
 		<motion.div
-			className="flex flex-wrap items-start justify-center gap-2 px-5 flex-1 w-full max-w-[1366px] "
+			className="flex flex-wrap items-start justify-center gap-2 px-5 flex-1 w-full max-w-[1366px] z-40 "
 			variants={serviceVariants}>
 			{services.map((service, i) => (
 				<motion.div
@@ -21,7 +21,7 @@ const ServiceCard = () => {
 						opacity: 1,
 						transition: { duration: 0.5, delay: i * 0.5 },
 					}}
-					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full min-h-[300px] p-5  flex flex-col gap-5 max-w-[200px] border border-primary shadow-inner shadow-primary ${
+					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full min-h-[300px] p-5  flex flex-col gap-5 max-w-[200px] border border-tertiary shadow-inner shadow-primary ${
 						hover === i ? " bg-shadowPrimary" : "bg-secondary"
 					}`}
 					onMouseEnter={() => setHover(i)}
@@ -34,7 +34,7 @@ const ServiceCard = () => {
 					{hover === i && (
 						<div className="backdrop-opacity-85 backdrop-blur-xl  p-5 shadow-sm shadow-shadowPrimary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
 							{service.skills.map((s, i) => (
-								<p key={i} className="bg-primary p-2 rounded-md shadow-lg">
+								<p key={i} className="bg-primary p-2 rounded-sm shadow-lg">
 									{s}
 								</p>
 							))}

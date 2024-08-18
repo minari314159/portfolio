@@ -34,7 +34,7 @@ const NavLinks = ({ setOpen}) => {
 						onClick={() => setOpen(false)}
 						className={`${
 							pathname === link.link &&
-							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_20%)]"
+							"underline underline-offset-8 [text-shadow:_0_3px_0_rgb(0_0_0_/_10%)]"
 						}`}>
 						{link.title}
 					</Link>

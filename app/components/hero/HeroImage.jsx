@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const HeroImage = () => {
 	return (
 		<motion.div
-			className="absolute bottom-[3rem] right-[-1rem] w-[450px] sm:w-[600px] md:w-[650px] lg:right-[2%] xl:w-[550px] xl:right-[25%] z-0 overflow-clip "
+			className="fixed bottom-[8rem]  w-[450px] md:w-[500px] xl:w-[550px] md:bottom-[10rem] md:right-[5%] lg:right-[10%] xl:right-[20%] z-0 overflow-clip "
 			initial={{ translateX: 1000 }}
 			animate={{
 				translateX: 0,
@@ -19,11 +19,11 @@ const HeroImage = () => {
 				},
 			}}>
 			<Image
-				src="/assets/profile.jpeg"
+				src="/assets/heroprofile.jpg"
 				width={550}
 				height={700}
 				alt="Profile illustration"
-				className="rounded-sm opacity-50 blur-[1px]"
+				className="rounded-sm  opacity-80 blur-[1px] border border-textmain object-cover object-right"
 			/>
 		</motion.div>
 	);

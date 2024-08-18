@@ -66,9 +66,9 @@ const Form = () => {
 		<motion.div
 			initial={{ translateX: 500 }}
 			animate={{ translateX: 0, transition: { delay: 0.5, duration: 0.5 } }}
-			className="w-[50%] lg:w-[70%] flex flex-col items-center justify-center gap-1 ">
+			className="w-[70%] flex flex-col items-center justify-center gap-1 ">
 			<motion.h1
-				className=" text-4xl md:text-5xl lg:text-6xl md:leading-[4rem] text-center z-[10]"
+				className=" text-5xl lg:text-6xl md:leading-[4rem] text-center z-[10] w-full"
 				>
 				Shall We <br/>Work Together?
 			</motion.h1>
