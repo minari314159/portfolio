@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const HireSVG = () => {
 	return (
 		<motion.div
-			className=" flex flex-col items-center justify-center text-center col-span-2"
+			className=" flex flex-col items-center justify-center text-center col-span-2 my-5"
 			initial={{  opacity: 0 }}
 			animate={{
 				

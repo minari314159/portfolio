@@ -8,10 +8,10 @@ const Sidebar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<motion.div animate={open ? "open" : "closed"}>
+		<motion.div animate={open ? "open" : "closed"} className="relative">
 			<motion.div
-				className={`  bg-secondary  backdrop-filter backdrop-blur-md bg-opacity-40  shadow-xl
-					 w-[150px] md:w-[20%] max-w-[300px] h-screen fixed top-[-0.5rem] left-0 z-50 `}
+				className={` bg-transparent ${open && "bg-secondary border-r border-textmain"}  backdrop-filter backdrop-blur-md bg-opacity-40  
+					 w-[150px] md:w-[20%] max-w-[300px] min-h-screen fixed top-0  z-50 `}
 				variants={sidebarVariants}>
 				<NavLinks setOpen={setOpen} />
 				<button

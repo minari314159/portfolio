@@ -2,11 +2,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import MailSVG from "./MailSVG";
+
 import Success from "./Success";
 
 const Form = () => {
-	const ref = useRef();
+
 	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: "",
@@ -64,19 +64,22 @@ const Form = () => {
 
 	return (
 		<motion.div
-			ref={ref}
 			initial={{ translateX: 500 }}
 			animate={{ translateX: 0, transition: { delay: 0.5, duration: 0.5 } }}
-			className="w-[50%] lg:w-[70%] flex items-center justify-center relative">
-			<MailSVG conRef={ref} />
+			className="w-[50%] lg:w-[70%] flex flex-col items-center justify-center gap-1 ">
+			<motion.h1
+				className=" text-4xl md:text-5xl lg:text-6xl md:leading-[4rem] text-center z-[10]"
+				>
+				Shall We <br/>Work Together?
+			</motion.h1>
 
 			<motion.form
 				ref={formRef}
 				onSubmit={handleSubmit}
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ delay: 4, duration: 1 }}
-				className=" border border-textmain rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full p-5 shadow-sm  flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[450px] text-sm md:text-md lg:text-lg ">
+				transition={{ delay: 1, duration: 1 }}
+				className="bg-primary border border-textmain rounded-sm   h-full p-5   flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[380px] text-sm md:text-md lg:text-lg ">
 				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-textmain placeholder:text-opacity-60">
 					Name:
 					<input
@@ -112,7 +115,7 @@ const Form = () => {
 				<button
 					type="submit"
 					disabled={loading}
-					className="bg-tertiary text-secondary p-2 px-4 rounded-sm cursor-pointer hover:bg-textmain transition-colors duration-75 text-center w-[50%] mt-4 disabled:bg-tertiary disabled:text-primary shadow  ">
+					className=" text-secondary p-2 px-4 rounded-sm cursor-pointer bg-textmain hover:bg-opacity-80 transition-colors duration-75 text-center w-[50%] mt-4 disabled:bg-tertiary disabled:text-primary shadow  ">
 					{loading ? "Sending..." : "Send Message"}
 				</button>
 				{success ? <Success setSuccess={setSuccess} /> : null}

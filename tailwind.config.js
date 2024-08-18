@@ -16,12 +16,6 @@ module.exports = {
 				textmain: "#252427",
 				textSecondary: "#cfcbbc",
 			},
-			backgroundImage: {
-				mountains: "url('/assets/mountains.png')",
-				stars: "url('/assets/stars.png')",
-				sun: "url('/assets/sun.png')",
-				planets: "url('/assets/planets.png')",
-			},
 		},
 	},
 	plugins: [],

@@ -4,6 +4,7 @@ import { serviceVariants } from "@/app/motionVariant";
 import React from "react";
 import Link from "next/link";
 import ServiceCard from "./ServiceCard";
+import ScrollText from "./ScrollText";
 
 const Services = () => {
 	return (
@@ -17,8 +18,8 @@ const Services = () => {
 				animate={serviceVariants.animate}>
 				<p className="text-textmain text-right text-sm md:text-md ">
 					<i>
-						Specialize in Full Stack 3D interactive sites <br /> with
-						Three.js & SVG Motion
+						Specialize in Full Stack 3D interactive sites <br /> with Three.js &
+						SVG Motion
 					</i>
 				</p>
 				<hr className=" w-[20%]  border-t-textmain ml-2" />
@@ -38,11 +39,12 @@ const Services = () => {
 				</h1>
 				<Link
 					href="/portfolio"
-					className="bg-tertiary p-2 rounded-lg cursor-pointer  transition-colors duration-75 w-fit  text-sm md:text-[1.05rem] lg:text-lg text-primary  shadow-md  hover:bg-textmain">
-					Portfolio
+					className=" hover:scale-[103%] p-2 rounded-sm cursor-pointer  transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] ">
+					[ Portfolio ]
 				</Link>
 			</motion.div>
 			<ServiceCard />
+			<ScrollText />
 		</motion.section>
 	);
 };

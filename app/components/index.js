@@ -5,6 +5,5 @@ import NavLinks from "./navbar/NavLinks";
 
 import Hero from "./hero/Hero";
 import HeroImage from "./hero/HeroImage";
-import ScrollText from "./hero/ScrollText";
 
-export { Nav, Sidebar, Socials, NavLinks, Hero, HeroImage, ScrollText };
+export { Nav, Sidebar, Socials, NavLinks, Hero, HeroImage };
