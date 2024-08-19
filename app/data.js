@@ -2,7 +2,7 @@ export const web_projects = [
 	{
 		name: "Nanocellum",
 		description: [
-			"A product design platform that invites you to discover the enchanting world of bio-integrated design through a bio-based lamp.  Nanocellum brings this sustainable innovation to life using React, Parallax design techniques using GSAP, and robust authentication features.",
+			"A product design platform that invites you to discover the enchanting world of bio-integrated design through a bio-based lamp grown from food waste.  Nanocellum brings this sustainable innovation to life using React, Parallax design techniques using GSAP, and robust authentication features.",
 		],
 		tags: [
 			{
@@ -10,11 +10,11 @@ export const web_projects = [
 				color: "blue-200",
 			},
 			{
-				name: "Web-Project Created: 2023",
+				name: "Web-Project Created: 2024",
 				color: "green-200",
 			},
 			{
-				name: "E Commerce, API",
+				name: "Web App, API, Material Design",
 				color: "red-200",
 			},
 		],
@@ -37,7 +37,7 @@ export const web_projects = [
 				color: "green-200",
 			},
 			{
-				name: "3D Interactivity",
+				name: "3D, Web App",
 				color: "red-200",
 			},
 		],
@@ -45,35 +45,10 @@ export const web_projects = [
 		gitlink: " ",
 		demo: "https://sjo-portfolio.vercel.app/",
 	},
-
-	{
-		name: "Holobiont",
-		description: [
-			"A comprehensive gaming directory, for keeping track of the games you own and saving games you are intrested in. Games can be filtered not only by platform, rating and date added but also by user previous preferences.",
-		],
-		tags: [
-			{
-				name: "Python, Rhino3D, Grasshopper",
-				color: "blue-200",
-			},
-			{
-				name: "Web-Project Created: 2023",
-				color: "green-200",
-			},
-			{
-				name: "Material Design",
-				color: "red-200",
-			},
-		],
-		image: "/assets/holobiont.png",
-		gitlink: "https://github.com/minari314159/Gamehub",
-		demo: "https://game-7rijhkuik-minari314159.vercel.app",
-	},
-
 	{
 		name: "Energy Forcasting",
 		description: [
-			"lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a SKLearn model and Pandas for data manipulation.",
 		],
 		tags: [
 			{
@@ -85,18 +60,43 @@ export const web_projects = [
 				color: "green-200",
 			},
 			{
-				name: "Energy Optimization Model",
+				name: "Model, API, Data Analysis",
 				color: "red-200",
 			},
 		],
 		image: "/assets/energyforcasting.jpeg",
-		gitlink: "https://github.com/minari314159/Gamehub",
-		demo: "https://game-7rijhkuik-minari314159.vercel.app",
+		gitlink: "https://github.com/minari314159",
+		demo: "/contact",
 	},
+
 	{
-		name: "Chemical Equilibrium",
+		name: "Holobiont",
 		description: [
-			"lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+			"A dynamic rewilding system for installations in metropolitan areas. It is theorized to enhance and provide optimal condition for urban rewilding and rehabilitation of the biodiversity of local plant and microbe ecologies focusing intently on material development and optimization.",
+		],
+		tags: [
+			{
+				name: "Python, Rhino3D, Grasshopper",
+				color: "blue-200",
+			},
+			{
+				name: "Completed: 2022",
+				color: "green-200",
+			},
+			{
+				name: "Material Design",
+				color: "red-200",
+			},
+		],
+		image: "/assets/holobiont.png",
+		gitlink: "https://github.com/minari314159",
+		demo: "/contact",
+	},
+
+	{
+		name: "Thermo- Electrics",
+		description: [
+			"Focuses on developing a scalable green method of synthesis  using microwave irradiation to produce high purity of copper sulphide thermoeletric nanoparticle powders. The entire process is optimized using a Python based algorithm to predict the phase diagram & chemical equilibrium tables of the copper sulfide system, which is then used to optimize the entire synthesis process including any generated waste products.",
 		],
 		tags: [
 			{
@@ -104,31 +104,31 @@ export const web_projects = [
 				color: "blue-200",
 			},
 			{
-				name: "Web-Project Created: 2023",
+				name: "Completed: 2020",
 				color: "green-200",
 			},
 			{
-				name: "Thermoelectric Material Design",
+				name: "Material Design, Data Analysis",
 				color: "red-200",
 			},
 		],
 		image: "/assets/copper_sulfides.png",
-		gitlink: "https://github.com/minari314159/Gamehub",
-		demo: "https://game-7rijhkuik-minari314159.vercel.app",
+		gitlink: "https://github.com/minari314159",
+		demo: "/contact",
 	},
 ];
 
 export const services = [
 	{
-		title: "Seemless Animations",
+		title: "Material Design",
 		description:
-			"Maintaining unique 2D/3D animations using either Framer Motion or GSAP, across all device screen sizes.",
-		skills: ["CSS", "Framer", "GSAP", "Blender", "Three.js"],
+			"Developing and optimizing materials with the use of Python and other 3D softwares for the creation of sustainable and bio-integrated designs.",
+		skills: ["Python", "Rhino3D", "Chemistry", "Material Science"],
 	},
 	{
 		title: "Frontend Development",
 		description:
-			"Using React or  Next.js, with global state management using Redux and data fetching with fetchAPI or Axios.",
+			"Creating responsive and interactive web applications using React, Next.js, and TailwindCSS for data driven design.",
 		skills: [
 			"HTML",
 			"Javascript",
@@ -142,7 +142,7 @@ export const services = [
 	{
 		title: "Backend Integration",
 		description:
-			"Building anf integrating backend APIs with either Next.js or Express.js to bridge the frontend and database. ",
+			"Building and integrating APIs using Node.js(Express.js) or Nextjs for data driven design. ",
 		skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
 	},
 ];

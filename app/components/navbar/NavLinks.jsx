@@ -25,7 +25,7 @@ const NavLinks = ({ setOpen}) => {
 			{links.map((link, index) => (
 				<motion.div
 					key={index}
-					className={`text-textmain text-md md:text-lg ${merri.className} `}
+					className={`text-textmain font-thin text-md md:text-lg ${merri.className} `}
 					variants={navVariants}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}>

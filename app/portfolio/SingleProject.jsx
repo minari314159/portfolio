@@ -8,7 +8,7 @@ import Link from "next/link";
 const SingleProject = ({ project, i }) => {
 	return (
 		<motion.div
-			className={`grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 w-full h-full  border border-textmain rounded-sm   ${
+			className={`grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-2 w-full h-full  border border-textmain rounded-sm   ${
 				i === 0 && "col-span-2 "
 			}`}
 			initial={{ translateX: i % 2 === 0 ? 500 : -500, opacity: 0 }}
@@ -33,7 +33,7 @@ const SingleProject = ({ project, i }) => {
 						href={project.gitlink}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="border border-textmain bg-primary rounded-md p-2  w-fit h-fit">
+						className="border border-textmain bg-[#a2a29f] rounded-md p-2  w-fit h-fit">
 						<SlSocialGithub
 							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem]"}`}
 						/>
@@ -42,7 +42,7 @@ const SingleProject = ({ project, i }) => {
 						href={project.demo}
 						rel="noopener noreferrer"
 						target="_blank"
-						className="border border-textmain bg-primary rounded-md p-2  w-fit h-fit">
+						className="border border-textmain bg-[#a2a29f]  rounded-md p-2  w-fit h-fit">
 						<SlRocket
 							className={`${i === 0 ? "w-5 h-5" : "w-[0.85rem] h-[0.85rem"}`}
 						/>
@@ -56,10 +56,9 @@ const SingleProject = ({ project, i }) => {
 					} font-semibold font-['Tahoma']`}>
 					{project.name}
 				</h2>
-				<div
-					className={`w-full  ${i === 0 ? "text-md" : "text-[12px] "}`}>
+				<div className={`w-full  ${i === 0 ? "text-md" : "text-[12px] "}`}>
 					<p className="text-blue-800">{project.tags[0].name}</p>
-
+					<p className="text-green-800">{project.tags[1].name}</p>
 					<p className="text-red-800">{project.tags[2].name}</p>
 				</div>
 				<p className={`${i === 0 ? "flex" : "hidden xl:flex text-[13px]"}`}>

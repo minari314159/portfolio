@@ -26,7 +26,7 @@ const ServiceCard = () => {
 					}`}
 					onMouseEnter={() => setHover(i)}
 					onMouseLeave={() => setHover(-1)}>
-					<h2 className="text-lg md:text-xl font-bold [text-shadow:_0_3px_0_rgb(0_0_0_/_10%)]">
+					<h2 className="text-lg md:text-xl font-semibold font-['Tahoma'] [text-shadow:_0_3px_0_rgb(0_0_0_/_10%)]">
 						{service.title}
 					</h2>
 					<p className="text-xs md:text-sm">{service.description}</p>
@@ -34,7 +34,7 @@ const ServiceCard = () => {
 					{hover === i && (
 						<div className="backdrop-opacity-85 backdrop-blur-xl  p-5 shadow-sm shadow-shadowPrimary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
 							{service.skills.map((s, i) => (
-								<p key={i} className="bg-primary p-2 rounded-sm shadow-lg">
+								<p key={i} className="bg-primary p-2 rounded-sm shadow-lg border border-textmain">
 									{s}
 								</p>
 							))}
