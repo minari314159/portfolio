@@ -37,22 +37,22 @@ export const web_projects = [
 				color: "green-200",
 			},
 			{
-				name: "3D, Web App",
+				name: "React, Web App, React 3 Fibre",
 				color: "red-200",
 			},
 		],
 		image: "/assets/3D_Portfolio.png",
-		gitlink: " ",
+		gitlink: "https://github.com/minari314159/SJO-Portfolio",
 		demo: "https://sjo-portfolio.vercel.app/",
 	},
 	{
 		name: "Energy Forcasting",
 		description: [
-			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a SKLearn model and Pandas for data manipulation.",
+			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a XGBoost model and Pandas for data manipulation.",
 		],
 		tags: [
 			{
-				name: "Python, SKLearn, Pandas",
+				name: "Python, XGBoost, Pandas",
 				color: "blue-200",
 			},
 			{
@@ -65,7 +65,7 @@ export const web_projects = [
 			},
 		],
 		image: "/assets/energyforcasting.jpeg",
-		gitlink: "https://github.com/minari314159",
+		gitlink: "https://github.com/minari314159/Energy_Forcasting",
 		demo: "/contact",
 	},
 
@@ -100,7 +100,7 @@ export const web_projects = [
 		],
 		tags: [
 			{
-				name: "Python (Jython), Matplotlib",
+				name: "Python, Matplotlib",
 				color: "blue-200",
 			},
 			{
@@ -122,21 +122,21 @@ export const services = [
 	{
 		title: "Material Design",
 		description:
-			"Developing and optimizing materials with the use of Python and other 3D softwares for the creation of sustainable and bio-integrated designs.",
-		skills: ["Python", "Rhino3D", "Chemistry", "Material Science"],
+			"Developing and optimizing materials with the use of Python and chemistry background for the creation of sustainable and bio-integrated designs.",
+		skills: ["Python", "Data Analysis", "Chemistry", "Material Science"],
 	},
 	{
 		title: "Frontend Development",
 		description:
-			"Creating responsive and interactive web applications using React, Next.js, and TailwindCSS for data driven design.",
+			"Creating responsive and interactive web applications using React/Next.js, and TailwindCSS for data driven design.",
 		skills: [
 			"HTML",
 			"Javascript",
 			"React",
 			"Next.js",
-			"Redux",
+			"Framer Motion",
 			"Axios",
-			"TailwindCSS",
+			"Tailwind/CSS",
 		],
 	},
 	{

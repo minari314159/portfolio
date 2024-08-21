@@ -9,7 +9,7 @@ import ScrollText from "./ScrollText";
 const Services = () => {
 	return (
 		<motion.section
-			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between gap-5 px-5"
+			className=" w-full max-w-[1336px] min-h-[90vh] flex flex-col items-center justify-between gap-5 px-5 overflow-hidden"
 			variants={serviceVariants}>
 			<motion.div
 				className="flex-1  self-end flex items-center justify-end w-full "
@@ -19,7 +19,7 @@ const Services = () => {
 				<p className="text-textmain text-right text-sm md:text-md ">
 					<i>
 						An engineer and designer specializing in <br />
-						 Sustainable material design and <br /> Web development.
+						Sustainable material design and <br /> Web development.
 					</i>
 				</p>
 				<hr className=" w-[20%]  border-t-textmain ml-2" />
@@ -29,17 +29,17 @@ const Services = () => {
 				variants={serviceVariants}
 				initial={serviceVariants.initial}
 				animate={serviceVariants.animate}>
-				<h1 className="text-4xl md:text-5xl text-right  w-[50%]">
-					Unique <i>Ideas</i>
+				<h1 className="text-4xl md:text-5xl text-right  w-[70%]">
+					Holistic <i>Approach</i>
 				</h1>
-				<h1 className="text-4xl md:text-5xl w-[50%] font-['Tahoma'] font-bold">
+				<h1 className="text-4xl md:text-5xl w-[70%] font-['Tahoma'] font-bold">
 					{" "}
 					Data Driven <br />
 					<i>Design</i>
 				</h1>
 				<Link
 					href="/portfolio"
-					className=" hover:scale-[103%] p-2 rounded-sm cursor-pointer border border-textmain transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] ">
+					className=" hover:scale-[103%] p-2 rounded-sm cursor-pointer border border-textmain transition-colors duration-75 drop-shadow-[4px_5px_1px_rgba(255_255_255_/_10%)] z-40">
 					[ Portfolio ]
 				</Link>
 			</motion.div>

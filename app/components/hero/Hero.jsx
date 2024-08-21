@@ -16,7 +16,7 @@ const Hero = () => {
 				<motion.div className="h-full w-full flex flex-col justify-center md:items-start items-center gap-5 md:gap-10 ">
 					<motion.h2
 						variants={textVariant}
-						className="font-['Tahoma'] text-5xl md:text-6xl lg:text-7xl font-bold ">
+						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ">
 						Bio-Designer & <br />
 						Web Developer
 					</motion.h2>
