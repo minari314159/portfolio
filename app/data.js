@@ -64,7 +64,7 @@ export const web_projects = [
 				color: "red-200",
 			},
 		],
-		image: "/assets/energyforcasting.jpeg",
+		image: "/assets/energyforcasting.png",
 		gitlink: "https://github.com/minari314159/Energy_Forcasting",
 		demo: "/contact",
 	},
@@ -90,7 +90,7 @@ export const web_projects = [
 		],
 		image: "/assets/holobiont.png",
 		gitlink: "https://github.com/minari314159",
-		demo: "/contact",
+		demo: "https://issuu.com/sj_olsen/docs/portfolio_sjo_2022",
 	},
 
 	{
@@ -114,7 +114,7 @@ export const web_projects = [
 		],
 		image: "/assets/copper_sulfides.png",
 		gitlink: "https://github.com/minari314159",
-		demo: "/contact",
+		demo: "https://issuu.com/sj_olsen/docs/portfolio_sjo_2022",
 	},
 ];
 

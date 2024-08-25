@@ -10,7 +10,9 @@ const Sidebar = () => {
 	return (
 		<motion.div animate={open ? "open" : "closed"} className="relative">
 			<motion.div
-				className={` bg-transparent ${open && "bg-secondary border-r border-textmain"}  backdrop-filter backdrop-blur-md bg-opacity-40  
+				className={` bg-transparent ${
+					open && "bg-secondary border-r border-textmain"
+				}  backdrop-filter backdrop-blur-md bg-opacity-40  
 					 w-[150px] md:w-[20%] max-w-[300px] min-h-screen fixed top-0  z-50 `}
 				variants={sidebarVariants}>
 				<NavLinks setOpen={setOpen} />
@@ -21,7 +23,6 @@ const Sidebar = () => {
 						<motion.path
 							strokeWidth="1.5"
 							stroke="#252427"
-							
 							variants={{
 								closed: { d: "M 2 2.5 L 20 2.5" },
 								open: { d: "M 3 16.5 L 17 2.5" },
