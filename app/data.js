@@ -65,7 +65,7 @@ export const web_projects = [
 			},
 		],
 		image: "/assets/energyforcasting.png",
-		gitlink: "https://github.com/minari314159/Energy_Forcasting",
+		gitlink: "https://github.com/minari314159/Energy_Forcasting_Models",
 		demo: "/contact",
 	},
 
