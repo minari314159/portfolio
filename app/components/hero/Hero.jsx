@@ -16,15 +16,15 @@ const Hero = () => {
 				<motion.div className="h-full w-full flex flex-col justify-center md:items-start items-center gap-5 md:gap-10 ">
 					<motion.h2
 						variants={textVariant}
-						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-8 tracking-[0.2rem]">
-						Full Stack Developer <br />& Bio-Designer
+						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-8 tracking-[0.2rem] text-center md:text-left">
+						Web Developer <br />& Designer
 					</motion.h2>
 					<motion.h1
 						variants={textVariant}
-						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider text-textmain w-[60%] ">
+						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
 						<i>
 							" Combining expertise in the synthesis and optimization of
-							physical materials with skills in coding data driven experiences "
+							physical materials with skills in coding data driven web experiences "
 						</i>
 					</motion.h1>
 				</motion.div>
