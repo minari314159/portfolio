@@ -120,24 +120,16 @@ export const web_projects = [
 
 export const services = [
 	{
-		title: "Material Design",
+		title: "Mobile-First Design",
 		description:
-			"Developing and optimizing materials with the use of Python and chemistry background for the creation of sustainable and bio-integrated designs.",
-		skills: ["Python", "Data Analysis", "Chemistry", "Material Science"],
+			"We start building your site for mobile devices first, then we add on to it to make tablet and desktop. 60% of all internet traffic is on mobile devices.",
+		skills: ["CSS", "TailwindCSS", "Framer Motion"],
 	},
 	{
 		title: "Frontend Development",
 		description:
 			"Creating responsive and interactive web applications using React/Next.js, and TailwindCSS for data driven design.",
-		skills: [
-			"HTML",
-			"Javascript",
-			"React",
-			"Next.js",
-			"Framer Motion",
-			"Axios",
-			"Tailwind/CSS",
-		],
+		skills: ["HTML", "Javascript", "React", "Next.js", , "Axios", ,],
 	},
 	{
 		title: "Backend Integration",

@@ -21,10 +21,10 @@ const Hero = () => {
 					</motion.h2>
 					<motion.h1
 						variants={textVariant}
-						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
+						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 text-center md:text-left md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
 						<i>
-							" Combining expertise in the synthesis and optimization of
-							physical materials with skills in coding data driven web experiences "
+							" No page builders - We offer 100% hand-coded websites with
+							superior results creating data driven web experiences "
 						</i>
 					</motion.h1>
 				</motion.div>
