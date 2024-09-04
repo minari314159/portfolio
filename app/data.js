@@ -128,13 +128,13 @@ export const services = [
 	{
 		title: "Frontend Development",
 		description:
-			"Creating responsive and interactive web applications using React/Next.js, and TailwindCSS for data driven design.",
-		skills: ["HTML", "Javascript", "React", "Next.js", , "Axios", ,],
+			"Creating responsive and interactive web applications using modern web frameworks. No pre-written content, writing unique and engaging content that is tailored to your brand.",
+		skills: ["HTML", "Javascript", "React", "Next.js", "Axios"],
 	},
 	{
 		title: "Backend Integration",
 		description:
-			"Building and integrating APIs using Node.js(Express.js) or Nextjs for data driven design. ",
+			"Building and integrating your data and APIs using Node.js(Express.js) or Nextjs for data driven design. ",
 		skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
 	},
 ];
