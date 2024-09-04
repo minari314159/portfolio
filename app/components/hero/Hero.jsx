@@ -23,8 +23,8 @@ const Hero = () => {
 						variants={textVariant}
 						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 text-center md:text-left md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
 						<i>
-							" No page builders - We offer 100% hand-coded websites with
-							superior results creating data driven web experiences "
+							" No page builders - We offer hand-coded websites with superior
+							results creating fast and unique web experiences "
 						</i>
 					</motion.h1>
 				</motion.div>
