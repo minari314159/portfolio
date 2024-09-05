@@ -4,6 +4,7 @@ import { contactVariants } from "@/app/motionVariant";
 import Form from "./Form";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ScrollText from "./ScrollText";
 
 const Contact = () => {
 	return (
@@ -35,6 +36,9 @@ const Contact = () => {
 					</div>
 				</motion.div>
 				<Form />
+			</div>
+			<div className="md:hidden">
+				<ScrollText />
 			</div>
 		</section>
 	);

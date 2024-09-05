@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Success from "./Success";
 
 const Form = () => {
-
 	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: "",
@@ -66,11 +65,10 @@ const Form = () => {
 		<motion.div
 			initial={{ translateX: 500 }}
 			animate={{ translateX: 0, transition: { delay: 0.5, duration: 0.5 } }}
-			className="w-[70%] flex flex-col items-center justify-center gap-1 ">
-			<motion.h1
-				className=" text-5xl lg:text-6xl md:leading-[4rem] text-center z-[10] w-full"
-				>
-				Shall We <br/>Work Together?
+			className="w-[70%]  flex flex-col items-center justify-center gap-1 ">
+			<motion.h1 className=" text-5xl lg:text-6xl md:leading-[4rem] text-center z-[10] w-full">
+				Shall We <br />
+				Work Together?
 			</motion.h1>
 
 			<motion.form
@@ -78,9 +76,9 @@ const Form = () => {
 				onSubmit={handleSubmit}
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ delay: 1, duration: 1 }}
+				transition={{ delay: 1, duration: 0.5 }}
 				className="bg-primary border border-textmain rounded-sm   h-full p-5   flex flex-col items-center justify-center gap-2 w-full  min-w-[350px] max-w-[380px] text-sm md:text-md lg:text-lg ">
-				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-textmain placeholder:text-opacity-60">
+				<label className="w-full p-2 rounded-sm text-textmain  border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-textmain placeholder:text-opacity-60">
 					Name:
 					<input
 						type="text"
@@ -90,7 +88,7 @@ const Form = () => {
 						className="grow bg-transparent focus:outline-none ml-2"
 					/>
 				</label>
-				<label className="w-full p-2 rounded-sm text-textmain bg-transparent border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-opacity-60 ">
+				<label className="w-full p-2 rounded-sm text-textmain  border border-textmain shadow-inner  shadow-primary text-opacity-60  placeholder:text-opacity-60 ">
 					Email:
 					<input
 						type="email"
@@ -107,7 +105,7 @@ const Form = () => {
 					onChange={handleChange}
 					placeholder="Your message..."
 					rows={8}
-					className="w-full p-2 rounded-sm focus:text-textmain bg-transparent border border-textmain placeholder:text-textmain placeholder:text-opacity-60 shadow-inner  shadow-primary"
+					className="w-full p-2 rounded-sm focus:text-textmain bg-primary border border-textmain placeholder:text-textmain placeholder:text-opacity-60 shadow-inner  shadow-primary"
 				/>
 				{error && (
 					<p className="text-md text-red-800">An error has occurred!</p>
