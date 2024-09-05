@@ -12,9 +12,7 @@ const Nav = () => {
 			<DynamicSidebar />
 			<hr className="w-full border-t-textmain flex-[70%] " />
 			<span className="text-center text-nowrap text-sm flex-1">
-				<i>
-					OLSEN <br /> WEB DESIGNS
-				</i>
+				<i>SJ OLSEN</i>
 			</span>
 			<hr className="w-full border-t-textmain flex-[50%]  sm:block" />
 			<Socials />

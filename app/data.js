@@ -6,7 +6,7 @@ export const web_projects = [
 		],
 		tags: [
 			{
-				name: "React, Express.js, MongoDB",
+				name: "React, Express.js, MongoDB, Rhino3D",
 				color: "blue-200",
 			},
 			{
@@ -22,52 +22,6 @@ export const web_projects = [
 		gitlink: "https://github.com/minari314159/nanocellum_store",
 		demo: "https://nanocellum-store.vercel.app/",
 	},
-	{
-		name: "3D Portfolio",
-		description: [
-			"Personal 3D version of this portfolio, created with React 3 Fibre in order to integrate and optimize the 3D assets into the WebGL Rendering Engine for web based 3D rendering.",
-		],
-		tags: [
-			{
-				name: "Nextjs, Threejs, Blender3D",
-				color: "blue-200",
-			},
-			{
-				name: "Web-Project Created: 2023",
-				color: "green-200",
-			},
-			{
-				name: "React, Web App, React 3 Fibre",
-				color: "red-200",
-			},
-		],
-		image: "/assets/3D_Portfolio.png",
-		gitlink: "https://github.com/minari314159/SJO-Portfolio",
-		demo: "https://sjo-portfolio.vercel.app/",
-	},
-	{
-		name: "Energy Forcasting",
-		description: [
-			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a XGBoost model and Pandas for data manipulation.",
-		],
-		tags: [
-			{
-				name: "Python, XGBoost, Pandas",
-				color: "blue-200",
-			},
-			{
-				name: "Web-Project Created: 2023",
-				color: "green-200",
-			},
-			{
-				name: "Model, API, Data Analysis",
-				color: "red-200",
-			},
-		],
-		image: "/assets/energyforcasting.png",
-		gitlink: "https://github.com/minari314159/Energy_Forcasting_Models",
-		demo: "/contact",
-	},
 
 	{
 		name: "Holobiont",
@@ -76,7 +30,7 @@ export const web_projects = [
 		],
 		tags: [
 			{
-				name: "Python, Rhino3D, Grasshopper",
+				name: "Python, Rhino3D, SideFx Houdini",
 				color: "blue-200",
 			},
 			{
@@ -116,25 +70,92 @@ export const web_projects = [
 		gitlink: "https://github.com/minari314159",
 		demo: "https://issuu.com/sj_olsen/docs/portfolio_sjo_2022",
 	},
+	{
+		name: "Energy Forcasting",
+		description: [
+			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a XGBoost model and Pandas for data manipulation.",
+		],
+		tags: [
+			{
+				name: "Python, XGBoost, Pandas",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "Model, API, Data Analysis",
+				color: "red-200",
+			},
+		],
+		image: "/assets/energyforcasting.png",
+		gitlink: "https://github.com/minari314159/Energy_Forcasting_Models",
+		demo: "/contact",
+	},
+	{
+		name: "3D Portfolio",
+		description: [
+			"Personal 3D version of this portfolio, created with React 3 Fibre in order to integrate and optimize the 3D assets into the WebGL Rendering Engine for web based 3D rendering.",
+		],
+		tags: [
+			{
+				name: "Nextjs, Threejs, Blender3D",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "React, Web App, React 3 Fibre",
+				color: "red-200",
+			},
+		],
+		image: "/assets/3D_Portfolio.png",
+		gitlink: "https://github.com/minari314159/SJO-Portfolio",
+		demo: "https://sjo-portfolio.vercel.app/",
+	},
 ];
 
 export const services = [
 	{
-		title: "Mobile-First Design",
+		title: "Computational Design & Integration",
 		description:
-			"We start building your site for mobile devices first, then we add on to it to make tablet and desktop. 60% of all internet traffic is on mobile devices.",
-		skills: ["CSS", "TailwindCSS", "Framer Motion"],
+			"Creating computational models and simulations for the optimization of material design and data driven solutions.",
+		skills: [
+			"Dry Lab Techniques",
+			"Python",
+			"Houdini SideFx",
+			"Rhino3D",
+			"Pandas",
+			"Matplotlib",
+		],
 	},
 	{
-		title: "Frontend Development",
+		title: " Material Synthesis & Testing",
 		description:
-			"Creating responsive and interactive web applications using modern web frameworks. No pre-written content, writing unique and engaging content that is tailored to your brand.",
-		skills: ["HTML", "Javascript", "React", "Next.js", "Axios"],
+			"Developing and optimizing materials with the use of my chemistry background for the creation of sustainable and bio-integrated designs.",
+		skills: [
+			"Laboratory Techniques",
+			"Data Analysis",
+			"Chemistry",
+			"Material Science",
+		],
 	},
+
 	{
-		title: "Backend Integration",
+		title: "Digital Development",
 		description:
-			"Building and integrating your data and APIs using Node.js(Express.js) or Nextjs for data driven design. ",
-		skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+			"Creating responsive and interactive web applications using Javascript frameworks React/Next.js, and TailwindCSS for data driven design.",
+		skills: [
+			"Javascript",
+			"CSS",
+			"React",
+			"Next.js",
+			"Framer Motion",
+			"Node.js",
+			"MongoDB",
+		],
 	},
 ];

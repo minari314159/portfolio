@@ -15,26 +15,30 @@ const ServiceCard = () => {
 			{services.map((service, i) => (
 				<motion.div
 					key={i}
-					initial={{ translateX:  -500, opacity: 0 }}
+					initial={{ translateX: -500, opacity: 0 }}
 					animate={{
 						translateX: 0,
 						opacity: 1,
 						transition: { duration: 0.5, delay: i * 0.5 },
 					}}
-					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full min-h-[300px] p-5  flex flex-col gap-5 max-w-[200px] border border-tertiary shadow-inner shadow-primary ${
+					className={` rounded-sm  backdrop-filter backdrop-blur-md bg-opacity-40 h-full min-h-[300px] p-5  flex flex-col gap-5 justify-between max-w-[200px] border border-tertiary shadow-inner shadow-primary ${
 						hover === i ? " bg-shadowPrimary" : "bg-secondary"
 					}`}
 					onMouseEnter={() => setHover(i)}
 					onMouseLeave={() => setHover(-1)}>
-					<h2 className="text-lg md:text-xl font-semibold font-['Tahoma'] [text-shadow:_0_3px_0_rgb(0_0_0_/_10%)]">
+					<h2 className="text-lg md:text-xl font-semibold font-['Tahoma'] [text-shadow:_0_3px_0_rgb(0_0_0_/_10%)] text-center w-full ">
 						{service.title}
 					</h2>
-					<p className="text-xs md:text-sm">{service.description}</p>
+					<p className="text-xs md:text-sm text-center align-text-top h-[150px]">
+						{service.description}
+					</p>
 
 					{hover === i && (
 						<div className="backdrop-opacity-85 backdrop-blur-xl  p-5 shadow-sm shadow-shadowPrimary bottom-0 left-0 absolute flex flex-wrap items-center justify-center gap-1 h-full">
 							{service.skills.map((s, i) => (
-								<p key={i} className="bg-primary p-2 rounded-sm shadow-lg border border-textmain">
+								<p
+									key={i}
+									className="bg-primary p-2 rounded-sm shadow-lg border border-textmain text-center">
 									{s}
 								</p>
 							))}

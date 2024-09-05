@@ -18,8 +18,7 @@ const Services = () => {
 				animate={serviceVariants.animate}>
 				<p className="text-textmain text-right text-sm md:text-md ">
 					<i>
-						Our collaborative process is very hands on <br /> as we work closely
-						with you to create <br /> a website you're 100% happy
+						An engineer and designer specializing in <br /> sustainable material design <br /> and synthetic biology.
 					</i>
 				</p>
 				<hr className=" w-[20%]  border-t-textmain ml-2" />
@@ -34,8 +33,8 @@ const Services = () => {
 				</h1>
 				<h1 className="text-4xl md:text-5xl w-[70%] font-['Tahoma'] font-bold">
 					{" "}
-					Quality Over <br />
-					<i>Quantity</i>
+					Data Driven <br />
+					<i>Design</i>
 				</h1>
 				<Link
 					href="/portfolio"

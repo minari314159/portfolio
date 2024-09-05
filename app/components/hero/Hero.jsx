@@ -17,14 +17,15 @@ const Hero = () => {
 					<motion.h2
 						variants={textVariant}
 						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-8 tracking-[0.2rem] text-center md:text-left">
-						Web Developer <br />& Designer
+						Bio Designer <br />& Data Scientist
 					</motion.h2>
 					<motion.h1
 						variants={textVariant}
 						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 text-center md:text-left md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
 						<i>
-							" No page builders - We offer hand-coded websites with superior
-							results creating fast and unique web experiences "
+							" Combining expertise in the synthesis and optimization of
+							physical materials with skills in coding data driven design
+							solutions. "
 						</i>
 					</motion.h1>
 				</motion.div>
