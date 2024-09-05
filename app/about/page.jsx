@@ -18,7 +18,8 @@ const Services = () => {
 				animate={serviceVariants.animate}>
 				<p className="text-textmain text-right text-sm md:text-md ">
 					<i>
-						An engineer and designer specializing in <br /> sustainable material design <br /> and synthetic biology.
+						An engineer and designer specializing in <br /> sustainable material
+						design <br /> and computational design.
 					</i>
 				</p>
 				<hr className=" w-[20%]  border-t-textmain ml-2" />
