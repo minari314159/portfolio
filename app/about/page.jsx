@@ -6,7 +6,6 @@ import React from "react";
 import Link from "next/link";
 import ServiceCard from "./ServiceCard";
 
-
 const Services = () => {
 	return (
 		<motion.section
@@ -31,7 +30,7 @@ const Services = () => {
 				initial={serviceVariants.initial}
 				animate={serviceVariants.animate}>
 				<h1 className="text-4xl md:text-5xl text-right  w-[70%]">
-					Holistic <i>Approach</i>
+					Holistic <i>Perspective</i>
 				</h1>
 				<h1 className="text-4xl md:text-5xl w-[70%] font-['Tahoma'] font-bold">
 					{" "}
@@ -46,14 +45,25 @@ const Services = () => {
 			</motion.div>
 			<Image
 				src="/assets/divider.png"
-				width={350}
-				height={30}
+				width={320}
+				height={20}
 				alt="Divider"
-				className="object-cover opacity-10"
+				className="object-cover opacity-5"
 			/>
-			<h1 className="text-4xl md:text-5xl  w-[85%]">Approach</h1>
+			<div className="w-[80%] p-2 flex flex-col items-center gap-5">
+				<h1 className="text-4xl md:text-5xl  ">The Approach</h1>
+				<p className="text-center">
+					The edge between scientist and designer may appear to be opposing
+					however it is finding that bridge between the two which creates a
+					philosphy of relishing in the ambiguous edges of the natural and
+					synthetic world.The approach entails three pillars, which can then be
+					re-evaluated until the desired function is achieved. It is applying
+					the scientific method to the design process, which creates ambiguous
+					edges between the two worlds pushing for nature centric design.
+				</p>
+			</div>
+
 			<ServiceCard />
-			
 		</motion.section>
 	);
 };
