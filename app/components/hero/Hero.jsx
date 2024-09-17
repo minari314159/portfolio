@@ -17,7 +17,7 @@ const Hero = () => {
 					<motion.h2
 						variants={textVariant}
 						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-8 tracking-[0.2rem] text-center md:text-left">
-						Bio Designer <br />& Data Scientist
+						Bio-Designer & <br /> Material Scientist
 					</motion.h2>
 					<motion.h1
 						variants={textVariant}

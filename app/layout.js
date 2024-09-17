@@ -6,9 +6,9 @@ import { Nav } from "./components";
 const lora = Lora({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata = {
-	title: "Olsen's Web Design",
+	title: "SJ Olsen Portfolio",
 	description:
-		"Portfolio of SJ Olsen, a web developer and designer specializing in sustainable material design and web development.",
+		"Portfolio of SJ Olsen, a material scientist and designer specializing in sustainable material design and green chemistry.",
 };
 
 export default function RootLayout({ children }) {
