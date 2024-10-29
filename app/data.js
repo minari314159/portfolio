@@ -121,42 +121,27 @@ export const web_projects = [
 
 export const services = [
 	{
-		title: "Computational Design & Integration",
+		title: "Data Handling & Processing",
 		description:
-			"Creating computational models and simulations for the optimization of material design and data driven solutions.",
-		skills: [
-			"Dry Lab Techniques",
-			"Python",
-			"Houdini SideFx",
-			"Rhino3D",
-			"Pandas",
-			"Matplotlib",
-		],
+			"Effective data processing is essential for accurate, efficient modeling, as it minimizes noise, highlights relevant patterns, and improves the overall quality of insights derived from the data.",
+		skills: ["Python", "Numpy", "SQL", "Pandas", "Matplotlib"],
 	},
 	{
-		title: " Material Synthesis & Testing",
+		title: " Machine Learning Fundamentals",
 		description:
-			"Developing and optimizing materials with the use of my chemistry background for the creation of sustainable and bio-integrated designs.",
+			"Key components include supervised learning (using labeled data for classification or regression) and Neural Networks. Core concepts also involve data preprocessing, model evaluation, and tuning to improve performance and generalization.",
 		skills: [
-			"Laboratory Techniques",
-			"Data Analysis",
-			"Chemistry",
-			"Material Science",
+			"Scikit Learn",
+			"Tensorflow",
+			"Regression Models",
+			"Classification Models",
 		],
 	},
 
 	{
-		title: "Digital Development",
+		title: "Misc",
 		description:
-			"Creating responsive and interactive web applications using Javascript frameworks React/Next.js, and TailwindCSS for data driven design.",
-		skills: [
-			"Javascript",
-			"CSS",
-			"React",
-			"Next.js",
-			"Framer Motion",
-			"Node.js",
-			"MongoDB",
-		],
+			"Flask - for small model deployment, Docker - for compartmentalization, Git - for version control",
+		skills: ["Flask", "Docker", "Git", "Excel"],
 	},
 ];
