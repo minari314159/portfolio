@@ -17,14 +17,14 @@ const Hero = () => {
 					<motion.h2
 						variants={textVariant}
 						className="font-['Tahoma'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-8 tracking-[0.2rem] text-center md:text-left">
-						Bio-Designer & <br /> Material Scientist
+						Data Scientist &
+						<br /> ML Engineer
 					</motion.h2>
 					<motion.h1
 						variants={textVariant}
 						className=" text-sm  sm:text-[16px] lg:text-lg font-light tracking-wider p-2  bg-[#a2a29f] backdrop-blur-sm  bg-opacity-40 text-center md:text-left md:bg-transparent  radius-sm text-textmain w-[80%] md:w-[60%] ">
 						<i>
-							" Combining expertise in the synthesis and optimization of
-							physical materials with skills in coding data driven design
+							" Combining creative problem solving with skills in coding data driven design
 							solutions. "
 						</i>
 					</motion.h1>

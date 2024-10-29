@@ -1,5 +1,28 @@
 export const web_projects = [
 	{
+		name: "Energy Forcasting",
+		description: [
+			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a XGBoost model and Pandas for data manipulation.",
+		],
+		tags: [
+			{
+				name: "Python, XGBoost, Pandas",
+				color: "blue-200",
+			},
+			{
+				name: "Web-Project Created: 2023",
+				color: "green-200",
+			},
+			{
+				name: "Model, API, Data Analysis",
+				color: "red-200",
+			},
+		],
+		image: "/assets/energyforcasting.png",
+		gitlink: "https://github.com/minari314159/Energy_Forcasting_Models",
+		demo: "/contact",
+	},
+	{
 		name: "Nanocellum",
 		description: [
 			"A product design platform that invites you to discover the enchanting world of bio-integrated design through a bio-based lamp grown from food waste.  Nanocellum brings this sustainable innovation to life using React, Parallax design techniques using GSAP, and robust authentication features.",
@@ -70,29 +93,7 @@ export const web_projects = [
 		gitlink: "https://github.com/minari314159",
 		demo: "https://issuu.com/sj_olsen/docs/portfolio_sjo_2022",
 	},
-	{
-		name: "Energy Forcasting",
-		description: [
-			"A research project which developed into a web based API for predicting a clients energy consumption based on energy type, local region and past household use. The model was trained using a XGBoost model and Pandas for data manipulation.",
-		],
-		tags: [
-			{
-				name: "Python, XGBoost, Pandas",
-				color: "blue-200",
-			},
-			{
-				name: "Web-Project Created: 2023",
-				color: "green-200",
-			},
-			{
-				name: "Model, API, Data Analysis",
-				color: "red-200",
-			},
-		],
-		image: "/assets/energyforcasting.png",
-		gitlink: "https://github.com/minari314159/Energy_Forcasting_Models",
-		demo: "/contact",
-	},
+
 	{
 		name: "3D Portfolio",
 		description: [

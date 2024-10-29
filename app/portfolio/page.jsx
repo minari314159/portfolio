@@ -11,15 +11,11 @@ const Projects = () => {
 				Featured Works
 			</h1>
 			<p className="text-center w-[75%] max-w-[700px] my-5">
-				In developing the following projects, two themes arose, the desire to
-				create sustainable materials using {""}
-				<i className="font-bold">
-					data, programing and extensive research into novel bio-based materials
-				</i>{" "}
-				and integrating said materials into{" "}
-				<i className="font-bold">
-					nature centric design agendas across multiple scales.
-				</i>
+				In developing the following projects, two themes arose: the desire to
+				create machine learning models for environmental and sustainability
+				insights, and a commitment to leveraging technology to provide actionable
+				insights into resource conservation, waste reduction, and ecosystem
+				protection.
 			</p>
 
 			<div className="grid grid-cols-2 auto-rows-auto gap-2 justify-center items-center w-[80%] ">
